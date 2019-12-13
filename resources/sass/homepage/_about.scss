@@ -1,0 +1,446 @@
+/*--------------------------------------
+5.1 About Us 1 Area Styles
+---------------------------------------*/
+.about-us1-area {
+    padding: 86px 0 116px;
+    @media (min-width: 480px) and (max-width: 991px) {
+        padding: 76px 0 96px;
+    }
+    @media only screen and (max-width: 479px) {
+        padding: 66px 0 86px;
+    }
+    .awards {
+        margin-top: 60px;
+        @media only screen and (max-width: 991px) {
+            text-align: center;
+        }
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 479px) {
+            text-align: inherit;
+            .col-xs-4 {
+                width: 100%;
+            }
+        }
+    }
+    .awards-box {
+        @media only screen and (max-width: 479px) {
+            margin-bottom: 10px;
+        }
+        a {
+            border-radius: 50%;
+            border: 1px dashed $primaryColor;
+            padding: 5px;
+            margin-right: 15px;
+            @media only screen and (max-width: 991px) {
+                display: inline-block;
+                margin-right: 0;
+                float: none !important;
+            }
+            @media only screen and (max-width: 479px) {
+                float: left !important;
+                margin-right: 15px;
+            }
+            i {
+                background: $primaryColor;
+                border-radius: 50%;
+                font-size: 24px;
+                color: $textPrimaryColor;
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+        .media-body {
+            h3 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+    .about-us-img-holder-wrap {
+        text-align: center;
+    }
+    .about-us-img-holder {
+        border: 18px solid $primaryColor;
+        position: relative;
+        @media only screen and (max-width: 767px) {
+            display: inline-block;
+        }
+        &:before {
+            top: 2%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            content: "";
+            position: absolute;
+            z-index: 1;
+            height: 96%;
+            width: 95%;
+            background: transparent;
+            border: 1px #ffffff;
+            border-style: dashed;
+        }
+        &:after {
+            top: 34px;
+            left: 34px;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: #eaeaea;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+/*--------------------------------------
+5.2 About Us 2 Area Styles
+---------------------------------------*/
+.about-us2-area {
+    padding: 87px 0 75px;
+    @media (min-width: 480px) and (max-width: 991px) {
+        padding: 67px 0 55px;
+    }
+    @media only screen and (max-width: 479px) {
+        padding: 57px 0 45px;
+    }
+    position: relative;
+    background: url(img/about/about-back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:before {
+        height: 100%;
+        width: 50%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+        background-color: rgba(0, 0, 0, 70%);
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
+    }
+    .about-us2-box {
+        padding-right: 50px;
+        h2 {
+            text-transform: uppercase;
+            color: #f6f6f6;
+            span {
+                color: $primaryColor;
+            }
+        }
+        p {
+            color: #d2d2d2;
+        }
+    }
+}
+
+/*-------------------------------------
+5.3 About Us Page 1 Area Styles
+---------------------------------------*/
+.about-us-page1-area {
+    padding: 93px 0 75px;
+    @media (min-width: 480px) and (max-width: 991px) {
+        padding: 73px 0 55px;
+    }
+    @media only screen and (max-width: 479px) {
+        padding: 63px 0 45px;
+    }
+    .about-us-expert {
+        padding-bottom: 60px;
+        display: inline-block;
+        @media only screen and (max-width: 991px) {
+            padding-bottom: 30px;
+        }
+        @media only screen and (max-width: 479px) {
+            text-align: center;
+        }
+        span {
+            margin-bottom: 10px;
+            display: block;
+        }
+        p {
+            margin-bottom: 50px;
+        }
+        .about-us-details-img-holder {
+            position: relative;
+            &:before {
+                content: "Before";
+                padding: 5px 15px 7px 15px;
+                color: $primaryTextColor;
+                background: $textPrimaryColor;
+                border-radius: 50px 0 0 50px;
+                position: absolute;
+                z-index: 1;
+                top: 150px;
+                right: 50%;
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    top: 110px;
+                }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    top: 80px;
+                }
+                @media only screen and (max-width: 767px) {
+                    top: 5px;
+                    background: rgba(255, 255, 255, 90%);
+                }
+                @media only screen and (max-width: 479px) {
+                    background: rgba(255, 255, 255, 70%);
+                }
+            }
+            &:after {
+                content: "After";
+                padding: 5px 15px 7px 15px;
+                color: $textPrimaryColor;
+                background: $primaryColor;
+                border-radius: 0 50px 50px 0;
+                position: absolute;
+                z-index: 1;
+                top: 150px;
+                left: 50%;
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    top: 110px;
+                }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    top: 80px;
+                }
+                @media only screen and (max-width: 767px) {
+                    top: 5px;
+                    background: rgba(106, 175, 8, 90%);
+                }
+                @media only screen and (max-width: 479px) {
+                    background: rgb(106, 175, 8, 70%);
+                }
+            }
+            span {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+    .skill1-area {
+        position: relative;
+        overflow: hidden;
+        .progress {
+            background-color: #f0f0f0;
+            border-radius: 0;
+            box-shadow: none;
+            height: 7px;
+            margin-bottom: 56px;
+            overflow: visible;
+            position: relative;
+            margin-top: 25px;
+            .lead {
+                color: #444444;
+                font-size: 13px;
+                font-weight: 700;
+                left: 0;
+                position: absolute;
+                top: -13px;
+                z-index: 9;
+                background: #ffffff;
+                border: 2px solid $primaryColor;
+                padding: 5px 20px;
+            }
+        }
+        .progress-bar > span {
+            background: $primaryTextColor;
+            float: right;
+            font-size: 11px;
+            margin-right: 10px;
+            margin-top: -25px;
+            position: relative;
+            padding: 0 5px;
+        }
+        .progress-bar > span:before,
+        .progress-bar > span:after {
+            border: medium solid transparent;
+            content: "";
+            height: 0;
+            position: absolute;
+            top: 100%;
+            width: 0;
+        }
+        .progress-bar > span:before {
+            border-top-color: #333;
+            border-width: 5px;
+            left: 50%;
+            margin-left: -5px;
+        }
+        .progress:nth-child(1) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(2) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(3) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(4) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(5) .progress-bar {
+            background: $primaryColor;
+        }
+    }
+}
+/*-------------------------------------
+5.4 About Us Page 2 Area Styles
+---------------------------------------*/
+.about-us-page2-area {
+    padding: 86px 0 80px;
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 66px 0 60px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 56px 0 0;
+    }
+    .history-box {
+        padding-right: 100px;
+        margin-bottom: 50px;
+        @media only screen and (max-width: 767px) {
+            padding-right: 0;
+        }
+        .history-list {
+            margin-top: 30px;
+            li {
+                border-left: 1px dashed $primaryTextColor;
+                padding-left: 30px;
+                position: relative;
+                margin-left: 10px;
+                padding-bottom: 40px;
+                &:before {
+                    position: absolute;
+                    content: url(img/about/bullet.png);
+                    background-repeat: no-repeat;
+                    top: 0;
+                    left: -15px;
+                    z-index: 1;
+                }
+                h3 {
+                    line-height: 1;
+                    color: #111111;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+                &:last-child {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+    .history-img-wraper {
+        text-align: center;
+        .history-img-holder {
+            margin-top: 45px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 45px;
+                margin-top: 0;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                border: 2px dashed #e1e1e1;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                bottom: 30px;
+                right: 30px;
+            }
+            img {
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                left: -50px;
+                z-index: 1;
+                top: 60px;
+                width: 1px;
+                word-wrap: break-word;
+            }
+        }
+    }
+    .ask-question-left {
+        .panel-group {
+            padding-top: 10px;
+        }
+    }
+    .skill1-area {
+        position: relative;
+        overflow: hidden;
+        .progress {
+            background-color: #f0f0f0;
+            border-radius: 0;
+            box-shadow: none;
+            height: 7px;
+            margin-bottom: 60px;
+            overflow: visible;
+            position: relative;
+            margin-top: 30px;
+            .lead {
+                color: #444444;
+                font-size: 13px;
+                font-weight: 700;
+                left: 0;
+                position: absolute;
+                top: -13px;
+                z-index: 9;
+                background: #ffffff;
+                border: 2px solid $primaryColor;
+                padding: 5px 20px;
+            }
+        }
+        .progress-bar > span {
+            background: $primaryTextColor;
+            float: right;
+            font-size: 11px;
+            margin-right: 10px;
+            margin-top: -25px;
+            position: relative;
+            padding: 0 5px;
+        }
+        .progress-bar > span:before,
+        .progress-bar > span:after {
+            border: medium solid transparent;
+            content: "";
+            height: 0;
+            position: absolute;
+            top: 100%;
+            width: 0;
+        }
+        .progress-bar > span:before {
+            border-top-color: #333;
+            border-width: 5px;
+            left: 50%;
+            margin-left: -5px;
+        }
+        .progress:nth-child(1) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(2) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(3) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(4) .progress-bar {
+            background: $primaryColor;
+        }
+        .progress:nth-child(5) .progress-bar {
+            background: $primaryColor;
+        }
+    }
+}

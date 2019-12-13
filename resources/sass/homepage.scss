@@ -1,0 +1,499 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:400, 500, 600");
+@import url("https://fonts.googleapis.com/css?family=Lato:300, 400, 700");
+
+// Normalize
+@import "vendor/normalize";
+
+// HTML5 Boilerplate
+@import "vendor/boilerplate";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Nivo Slider
+@import "vendor/nivo";
+
+// Colors
+$primaryColor: #6aaf08;
+$darkPrimaryColor: #5c9d01;
+$lightPrimaryColor: #7ec617;
+$primaryTextColor: #646464;
+$secondaryTextColor: #727272;
+$textPrimaryColor: #ffffff;
+$dividerColor: #d6d6d6;
+$accentColor: #000000;
+
+@import "homepage/mixins";
+
+/*=====================================
+1. Theme Default CSS
+=======================================*/
+@import "homepage/base";
+
+/*----------------------------------------
+1.1 Title styles
+/*----------------------------------------*/
+@import "homepage/titles";
+
+/*----------------------------------------
+1.2 Button styles
+/*----------------------------------------*/
+@import "homepage/buttons";
+
+/*----------------------------------------
+1.3 Helper Classes styles
+/*----------------------------------------*/
+@import "homepage/helpers";
+/*=====================================
+2. Header Area Start Here
+=======================================*/
+
+/*-------------------------------------
+2.1 Header Area Common styles
+---------------------------------------*/
+@import "homepage/header";
+
+/*======================================
+3. Slider Area Start Here
+========================================*/
+/*--------------------------------------
+3.1 Slider Area Common styles
+---------------------------------------*/
+@import "homepage/slider";
+
+/*======================================
+4. Inner Page Bannar Area styles
+========================================*/
+.inner-page-banner-area {
+    text-align: center;
+    background: url(img/inner-page-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 90px 0 105px;
+    &:after {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 70%);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .pagination-area {
+        position: relative;
+        z-index: 1;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-size: 48px;
+            color: $textPrimaryColor;
+        }
+        ul {
+            li {
+                display: inline-block;
+                color: $textPrimaryColor;
+                a {
+                    color: $textPrimaryColor;
+                    @include transition(all, 0.5s, ease-out);
+                    &:hover {
+                        color: $primaryColor;
+                        @include transition(all, 0.5s, ease-out);
+                    }
+                }
+            }
+        }
+    }
+}
+/*======================================
+5. About Us Area Start Here
+========================================*/
+@import "homepage/about";
+
+/*======================================
+6. Services Area Start Here
+========================================*/
+@import "homepage/services";
+
+/*======================================
+7. Our Project Gallery Area Start Here
+========================================*/
+@import "homepage/projects";
+
+/*======================================
+8. Blog Area Start Here
+========================================*/
+@import "homepage/blog";
+
+/*======================================
+9. Team Area Start Here
+========================================*/
+@import "homepage/team";
+
+/*======================================
+10. Shop Area Start Here
+========================================*/
+@import "homepage/shop";
+
+/*======================================
+11. Contact Page Area Styles
+========================================*/
+@import "homepage/contact";
+
+/*======================================
+12. 404 Error Page Area Styles
+========================================*/
+@import "homepage/error";
+
+/*======================================
+13. Other Section Area Styles
+========================================*/
+@import "homepage/other";
+
+/*======================================
+14. Sidebar Area Start Here
+========================================*/
+
+/*----------------------------------------
+14.1 Sidebar Search Area Styles
+----------------------------------------*/
+.stylish-input-group {
+    background: #f8f8f8;
+    padding: 10px;
+    .form-control {
+        border: none;
+        box-shadow: 0 0 0;
+        border-radius: 0;
+        background: transparent;
+        text-transform: capitalize;
+        color: #111111;
+    }
+    .input-group-addon {
+        background: transparent !important;
+        border: none;
+        border-radius: 0;
+        button {
+            border: 0;
+            background: transparent;
+            span {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+.form-control::-moz-placeholder {
+    color: #646464;
+    font-size: 14px;
+}
+.sidebar-search-area {
+    h2 {
+        margin-top: -8px;
+    }
+    .stylish-input-group {
+        padding: 5px 10px;
+    }
+}
+/*----------------------------------------
+14.2 Categories Box Area Styles
+----------------------------------------*/
+.categories-box {
+    ul {
+        li {
+            font-weight: 600;
+            margin-bottom: 3px;
+            text-transform: capitalize;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                background: #f8f8f8;
+                padding: 15px 0 15px 10px;
+                color: #222222;
+                display: block;
+                @include transition(all, 0.5s, ease-out);
+                &:hover {
+                    background: $primaryColor;
+                    color: #ffffff;
+                    @include transition(all, 0.5s, ease-out);
+                    i {
+                        color: #ffffff;
+                        @include transition(all, 0.5s, ease-out);
+                    }
+                }
+                i {
+                    margin-right: 10px;
+                    font-size: 16px;
+                    color: $primaryColor;
+                    @include transition(all, 0.5s, ease-out);
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------
+14.3 Sidebar Product Tags Area Styles
+----------------------------------------*/
+.product-tags {
+    li {
+        display: inline-block;
+        margin-bottom: 3px;
+        border: 1px solid $dividerColor;
+        background: transparent;
+        font-size: 12px;
+        @include transition(all, 0.5s, ease-out);
+        a {
+            color: $primaryColor;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: block;
+            padding: 5px 16px;
+            font-weight: 600;
+            @include transition(all, 0.5s, ease-out);
+        }
+        &:hover {
+            border: 1px solid $primaryColor;
+            background: $primaryColor;
+            @include transition(all, 0.5s, ease-out);
+            a {
+                color: $textPrimaryColor;
+                @include transition(all, 0.5s, ease-out);
+            }
+        }
+    }
+}
+/*----------------------------------------
+14.4 Sidebar Categories Area Styles
+----------------------------------------*/
+.categories {
+    ul {
+        li {
+            font-weight: 500;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            text-transform: capitalize;
+            border-bottom: 1px solid $dividerColor;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: #222222;
+                @include transition(all, 0.5s, ease-out);
+                &:hover {
+                    color: $primaryColor;
+                    @include transition(all, 0.5s, ease-out);
+                }
+                i {
+                    margin-right: 10px;
+                    font-size: 16px;
+                    color: $primaryColor;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+/*----------------------------------------
+14.5 Sidebar Archives Area Styles
+----------------------------------------*/
+.archives {
+    ul {
+        li {
+            font-weight: 500;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            text-transform: capitalize;
+            border-bottom: 1px solid $dividerColor;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                color: #222222;
+                @include transition(all, 0.5s, ease-out);
+                &:hover {
+                    color: $primaryColor;
+                    @include transition(all, 0.5s, ease-out);
+                }
+                i {
+                    margin-right: 10px;
+                    font-size: 16px;
+                    color: $primaryColor;
+                }
+            }
+            span {
+                float: right;
+                color: #222222;
+            }
+        }
+    }
+}
+/*----------------------------------------
+14.6 Sidebar Popular News Area Styles
+----------------------------------------*/
+.popular-news {
+    .media a {
+        padding-right: 0;
+        margin-right: 10px;
+        img {
+            @include transition(all, 0.3s, ease-out);
+            &:hover {
+                opacity: 0.7;
+                @include transition(all, 0.3s, ease-out);
+            }
+        }
+    }
+    .media-body {
+        h3 {
+            text-transform: capitalize;
+            font-weight: 500;
+            margin-bottom: 12px;
+            line-height: 1.3;
+            font-size: 16px;
+            a {
+                color: $primaryColor;
+                @include transition(all, 0.3s, ease-out);
+                &:hover {
+                    color: #111111;
+                    @include transition(all, 0.3s, ease-out);
+                }
+            }
+        }
+        p {
+            color: #222222;
+            margin-bottom: 0;
+        }
+    }
+}
+/*----------------------------------------
+14.7 Sidebar Filter By Price Area Styles
+----------------------------------------*/
+.filter-by-price {
+    .filter-circle {
+        width: 100%;
+        height: 7px;
+        background: #f2f2f2;
+        display: inline-flex;
+        position: relative;
+        z-index: -1;
+        .filter-bar {
+            background: $primaryColor;
+            width: 84%;
+            margin: 0 auto;
+        }
+        &:before {
+            content: "";
+            background: $primaryColor;
+            height: 22px;
+            width: 22px;
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        &:after {
+            content: "";
+            background: $primaryColor;
+            height: 22px;
+            width: 22px;
+            position: absolute;
+            top: -8px;
+            right: 20px;
+            z-index: 1;
+            border-radius: 50%;
+        }
+    }
+    ul {
+        margin-top: 30px;
+        text-align: center;
+        padding: 8px;
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 18px;
+            color: #000000;
+            line-height: 1;
+            span {
+                color: #646464;
+            }
+            &:first-child {
+                background: #eeeeee;
+                border: 1px solid $dividerColor;
+                padding: 10px 20px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+/*----------------------------------------
+14.8 Sidebar Best Seller Area Styles
+----------------------------------------*/
+.best-seller-box {
+    padding-bottom: 30px;
+    li {
+        border-bottom: 1px solid $dividerColor;
+        margin-bottom: 15px;
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .media {
+            a {
+                padding-right: 0;
+                margin: 5px 20px 0 0;
+                @include transition(all, 0.5s, ease-out);
+                &:hover img {
+                    opacity: 0.5;
+                    @include transition(all, 0.5s, ease-out);
+                }
+            }
+            .media-body {
+                h3 {
+                    font-size: 16px;
+                    a {
+                        color: #111111;
+                        @include transition(all, 0.5s, ease-out);
+                        &:hover {
+                            color: $primaryColor;
+                            @include transition(all, 0.5s, ease-out);
+                        }
+                    }
+                }
+                ul {
+                    margin: 7px 0;
+                    li {
+                        border-bottom: none;
+                        display: inline-block;
+                        margin-bottom: 0;
+                        i {
+                            color: #f7c51d;
+                        }
+                        &:last-child i {
+                            color: #a7a7a7;
+                        }
+                    }
+                }
+                p {
+                    color: $primaryColor;
+                    span {
+                        text-decoration: line-through;
+                        margin-right: 10px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "homepage/footer";
