@@ -16,3 +16,4 @@ Route::get('/', function() {
 });
 
 Route::get('/dev', ['as' => 'static.homepage', 'uses' => 'HomepageController@index']);
+Route::post('contact', ['as' => 'static.contact.submit', 'uses' => 'HomepageController@contact']);

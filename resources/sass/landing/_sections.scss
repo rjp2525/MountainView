@@ -1,0 +1,178 @@
+//.section-header {
+//padding-bottom: 60px;
+//}
+/**.parallax-section .section-header h3 {
+    color: #fff;
+}**/
+.single-image {
+    overflow: hidden;
+}
+.single-image img {
+    width: 198px;
+    max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
+}
+
+.section-header h3 {
+    color: #3e3e3e;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 40px;
+        border-bottom: 3px solid #e9ecf1;
+        margin: 19px auto 24px;
+    }
+}
+
+.service-icon {
+    font-size: 42px;
+    color: #6aaf08;
+    display: block;
+    margin: 30px 0;
+}
+.service-title {
+    text-transform: capitalize;
+}
+.call-to-action {
+    padding: 20px 0;
+    background: #6aaf08;
+}
+.call-to-action .cta-inner {
+    padding: 20px 0;
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+}
+.call-to-action .cta-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.btn.btn-bordered {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 30px;
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #555;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+.call-to-action .cta-text {
+    padding: 5px 30px 5px 0;
+    float: left;
+}
+@media (max-width: 991px) {
+    .call-to-action .cta-text {
+        float: none;
+    }
+}
+.call-to-action .cta-button {
+    float: right;
+}
+@media (max-width: 991px) {
+    .call-to-action .cta-button {
+        float: none;
+    }
+}
+
+.spacer {
+    position: relative;
+    display: block;
+    margin: 40px 0;
+}
+section {
+    padding: 60px 0;
+}
+/**section.parallax-section {
+    padding: 0;
+}
+.parallax-section {
+    position: relative;
+}
+.parallax-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-attachment: fixed;
+    z-index: 32;
+}
+.parallax-inner {
+    position: relative;
+    padding: 60px 0;
+    z-index: 33;
+}
+**/
+.about-section p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.services {
+    background: #eee;
+
+    .section-header {
+        margin-bottom: 20px;
+    }
+
+    .section-header h3:after {
+        border-bottom: 3px solid #6aaf08;
+    }
+}
+
+.spost {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* Removes padding from first and last service box in the row. This causes
+     * the two end services to get wider by 15px, hence they are commented out. */
+    /**&:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }**/
+}
+
+.service-post {
+    padding: 20px 20px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    @include transition(box-shadow 0.2s ease-in-out);
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0 0 35px rgba(106, 175, 8, 0.5);
+    }
+}

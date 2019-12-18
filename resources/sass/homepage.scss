@@ -1,499 +1,796 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:400, 500, 600");
-@import url("https://fonts.googleapis.com/css?family=Lato:300, 400, 700");
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
-// Normalize
-@import "vendor/normalize";
-
-// HTML5 Boilerplate
-@import "vendor/boilerplate";
-
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
-
-// Nivo Slider
-@import "vendor/nivo";
-
-// Colors
-$primaryColor: #6aaf08;
-$darkPrimaryColor: #5c9d01;
-$lightPrimaryColor: #7ec617;
-$primaryTextColor: #646464;
-$secondaryTextColor: #727272;
-$textPrimaryColor: #ffffff;
-$dividerColor: #d6d6d6;
-$accentColor: #000000;
-
-@import "homepage/mixins";
-
-/*=====================================
-1. Theme Default CSS
-=======================================*/
-@import "homepage/base";
-
-/*----------------------------------------
-1.1 Title styles
-/*----------------------------------------*/
-@import "homepage/titles";
-
-/*----------------------------------------
-1.2 Button styles
-/*----------------------------------------*/
-@import "homepage/buttons";
-
-/*----------------------------------------
-1.3 Helper Classes styles
-/*----------------------------------------*/
-@import "homepage/helpers";
-/*=====================================
-2. Header Area Start Here
-=======================================*/
-
-/*-------------------------------------
-2.1 Header Area Common styles
----------------------------------------*/
-@import "homepage/header";
-
-/*======================================
-3. Slider Area Start Here
-========================================*/
-/*--------------------------------------
-3.1 Slider Area Common styles
----------------------------------------*/
-@import "homepage/slider";
-
-/*======================================
-4. Inner Page Bannar Area styles
-========================================*/
-.inner-page-banner-area {
-    text-align: center;
-    background: url(img/inner-page-banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative;
-    display: block;
-    padding: 90px 0 105px;
-    &:after {
-        position: absolute;
-        content: "";
-        background: rgba(0, 0, 0, 70%);
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-    }
-    .pagination-area {
-        position: relative;
-        z-index: 1;
-        h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            font-size: 48px;
-            color: $textPrimaryColor;
-        }
-        ul {
-            li {
-                display: inline-block;
-                color: $textPrimaryColor;
-                a {
-                    color: $textPrimaryColor;
-                    @include transition(all, 0.5s, ease-out);
-                    &:hover {
-                        color: $primaryColor;
-                        @include transition(all, 0.5s, ease-out);
-                    }
-                }
-            }
-        }
-    }
+.button-theme {
+    background: #6aaf08;
+    color: #fff;
 }
-/*======================================
-5. About Us Area Start Here
-========================================*/
-@import "homepage/about";
 
-/*======================================
-6. Services Area Start Here
-========================================*/
-@import "homepage/services";
-
-/*======================================
-7. Our Project Gallery Area Start Here
-========================================*/
-@import "homepage/projects";
-
-/*======================================
-8. Blog Area Start Here
-========================================*/
-@import "homepage/blog";
-
-/*======================================
-9. Team Area Start Here
-========================================*/
-@import "homepage/team";
-
-/*======================================
-10. Shop Area Start Here
-========================================*/
-@import "homepage/shop";
-
-/*======================================
-11. Contact Page Area Styles
-========================================*/
-@import "homepage/contact";
-
-/*======================================
-12. 404 Error Page Area Styles
-========================================*/
-@import "homepage/error";
-
-/*======================================
-13. Other Section Area Styles
-========================================*/
-@import "homepage/other";
-
-/*======================================
-14. Sidebar Area Start Here
-========================================*/
-
-/*----------------------------------------
-14.1 Sidebar Search Area Styles
-----------------------------------------*/
-.stylish-input-group {
-    background: #f8f8f8;
-    padding: 10px;
-    .form-control {
-        border: none;
-        box-shadow: 0 0 0;
-        border-radius: 0;
-        background: transparent;
-        text-transform: capitalize;
-        color: #111111;
-    }
-    .input-group-addon {
-        background: transparent !important;
-        border: none;
-        border-radius: 0;
-        button {
-            border: 0;
-            background: transparent;
-            span {
-                color: $primaryColor;
-            }
-        }
-    }
+.button-theme:hover {
+    background: #4c7e06;
+    color: #fff;
 }
-.form-control::-moz-placeholder {
-    color: #646464;
-    font-size: 14px;
+
+.main-header .dropdown-menu a:hover {
+    background: transparent;
+    color: #0071bb;
 }
-.sidebar-search-area {
-    h2 {
-        margin-top: -8px;
-    }
-    .stylish-input-group {
-        padding: 5px 10px;
-    }
+
+.setting-button {
+    background: #0071bb;
 }
-/*----------------------------------------
-14.2 Categories Box Area Styles
-----------------------------------------*/
-.categories-box {
-    ul {
-        li {
-            font-weight: 600;
-            margin-bottom: 3px;
-            text-transform: capitalize;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                background: #f8f8f8;
-                padding: 15px 0 15px 10px;
-                color: #222222;
-                display: block;
-                @include transition(all, 0.5s, ease-out);
-                &:hover {
-                    background: $primaryColor;
-                    color: #ffffff;
-                    @include transition(all, 0.5s, ease-out);
-                    i {
-                        color: #ffffff;
-                        @include transition(all, 0.5s, ease-out);
-                    }
-                }
-                i {
-                    margin-right: 10px;
-                    font-size: 16px;
-                    color: $primaryColor;
-                    @include transition(all, 0.5s, ease-out);
-                }
-            }
-        }
+
+.close-offcanvas {
+    color: #0071bb;
+}
+
+.main-header .navbar-expand-lg .navbar-nav .link-color:hover {
+    color: #0071bb;
+}
+
+#page_scroller {
+    background: #0071bb;
+}
+
+.btn-color {
+    background: #0071bb;
+    border-color: #0071bb;
+}
+
+.a-color {
+    color: #0071bb;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background: #0071bb;
+}
+
+.checkbox-theme input[type="checkbox"]:checked + label::before {
+    border: 2px solid #0071bb;
+    background: #0071bb;
+}
+
+.border-thn {
+    color: #0071bb;
+    border: solid 2px #0071bb;
+    border-radius: 50px;
+}
+
+.border-thn:hover {
+    color: #fff;
+    border: solid 2px #0071bb;
+    background: #0071bb;
+}
+
+.btn-outline:hover {
+    border: solid 1px #0071bb;
+    background: #0071bb;
+    color: #fff;
+}
+
+.btn-outline {
+    border: solid 1px #0071bb;
+    color: #0071bb;
+}
+
+.footer .form-inline .btn {
+    color: #fff;
+    background: #0071bb;
+}
+
+.counters::before {
+    background: #0071bb;
+}
+
+.testimonial::before {
+    background: #0071bb;
+}
+
+.features-info .icon i {
+    color: #0071bb;
+}
+
+.blog .post-meta a {
+    color: #0071bb;
+}
+
+.category ul li a:hover {
+    color: #0071bb;
+}
+
+.services ul li a:hover {
+    color: #0071bb;
+}
+
+.services ul li i {
+    color: #0071bb;
+}
+
+.btn-color:hover {
+    background: #0071bb;
+    border-color: #0071bb;
+}
+
+.blog .date-box {
+    background: #0071bb;
+}
+
+.blog .date-box::after {
+    border-left: 15px solid #0071bb;
+}
+
+.popular-tags ul li a:hover {
+    border: solid 1px #0071bb;
+    background: #0071bb;
+    color: #fff;
+}
+
+/** MEDIA **/
+@media (max-width: 992px) {
+    .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #0071bb !important;
+    }
+
+    .navbar-light .navbar-toggler span {
+        color: #0071bb;
     }
 }
 
-/*----------------------------------------
-14.3 Sidebar Product Tags Area Styles
-----------------------------------------*/
-.product-tags {
-    li {
-        display: inline-block;
-        margin-bottom: 3px;
-        border: 1px solid $dividerColor;
-        background: transparent;
-        font-size: 12px;
-        @include transition(all, 0.5s, ease-out);
-        a {
-            color: $primaryColor;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            display: block;
-            padding: 5px 16px;
-            font-weight: 600;
-            @include transition(all, 0.5s, ease-out);
-        }
-        &:hover {
-            border: 1px solid $primaryColor;
-            background: $primaryColor;
-            @include transition(all, 0.5s, ease-out);
-            a {
-                color: $textPrimaryColor;
-                @include transition(all, 0.5s, ease-out);
-            }
-        }
+@media (min-width: 991px) {
+    .sticky-header .navbar-expand-lg .navbar-nav .active .nav-link {
+        color: #fff !important;
+    }
+
+    .sticky-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #fff !important;
+        opacity: 0.8;
+    }
+
+    .header-shrink .navbar-expand-lg .navbar-nav .active .nav-link {
+        color: #515151 !important;
+    }
+
+    .header-shrink .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #515151 !important;
     }
 }
-/*----------------------------------------
-14.4 Sidebar Categories Area Styles
-----------------------------------------*/
-.categories {
-    ul {
-        li {
-            font-weight: 500;
-            margin-bottom: 8px;
-            padding-bottom: 8px;
-            text-transform: capitalize;
-            border-bottom: 1px solid $dividerColor;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                color: #222222;
-                @include transition(all, 0.5s, ease-out);
-                &:hover {
-                    color: $primaryColor;
-                    @include transition(all, 0.5s, ease-out);
-                }
-                i {
-                    margin-right: 10px;
-                    font-size: 16px;
-                    color: $primaryColor;
-                }
-            }
-            &:last-child {
-                border-bottom: none;
-            }
-        }
+
+/**
+ * Bootstrap
+ */
+@import "landing/functions";
+@import "landing/variables";
+@import "landing/mixins";
+@import "landing/root";
+@import "landing/reboot";
+@import "landing/type";
+@import "landing/images";
+@import "landing/code";
+@import "landing/grid";
+@import "landing/tables";
+@import "landing/forms";
+@import "landing/buttons";
+@import "landing/transitions";
+@import "landing/dropdown";
+@import "landing/button-group";
+@import "landing/input-group";
+@import "landing/custom-forms";
+@import "landing/nav";
+@import "landing/navbar";
+@import "landing/card";
+@import "landing/breadcrumb";
+@import "landing/pagination";
+@import "landing/badge";
+@import "landing/jumbotron";
+@import "landing/alert";
+@import "landing/progress";
+@import "landing/media";
+@import "landing/list-group";
+@import "landing/close";
+@import "landing/toasts";
+@import "landing/modal";
+@import "landing/tooltip";
+@import "landing/popover";
+@import "landing/carousel";
+@import "landing/spinners";
+@import "landing/utilities";
+@import "landing/print";
+@import "landing/sections";
+
+// @import "landing/vendor/magnificent-popup";
+// @import "landing/vendor/jq-selectbox";
+// @import "landing/vendor/range-slider";
+// @import "landing/vendor/animate";
+// @import "landing/vendor/jq-custom-scrollbar";
+//
+// ***** Fonts *****
+// @import "landing/vendor/font-awesome";
+// @import "landing/vendor/flaticon";
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.bg-grea {
+    background: #f9f9f8;
+}
+
+.page_loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(../img/loader.gif) center no-repeat #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #2f2f2f;
+}
+
+a {
+    color: #37404d;
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #2f2f2f;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #2f2f2f;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.btn-md {
+    cursor: pointer;
+    padding: 9px 35px;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    border: none;
+}
+
+.btn-sm {
+    cursor: pointer;
+    padding: 7px 25px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+}
+
+.col-pad {
+    padding: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.form-inline .btn,
+.form-inline .btn:active {
+    padding: 0 17px;
+    font-size: 15px;
+    background: none;
+    border: solid 1px transparent;
+    color: #212121;
+}
+
+.form-inline .btn:hover {
+    background: none;
+    border: solid 1px transparent;
+}
+
+.form-inline a {
+    padding: 0 17px;
+}
+
+.btn {
+    font-family: "Nunito Sans", sans-serif;
+    border-radius: 3px;
+}
+
+#page_scroller {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 11px;
+    font-size: 12px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+/*Custom Anmation*/
+.bgburns .slides li:nth-of-type(odd) .slide-background {
+    animation: bgburnsEast 25s linear infinite alternate;
+    -webkit-animation: bgburnsEast 25s linear infinite alternate;
+}
+
+.bgburns .slides li:nth-of-type(even) .slide-background {
+    animation: bgburnsWest 25s linear infinite alternate;
+    -webkit-animation: bgburnsWest 25s linear infinite alternate;
+}
+
+@keyframes bgburnsEast {
+    from {
+        transform: scale(1) translateX(0);
+        -webkit-transform: scale(1) translateX(0);
+    }
+    to {
+        transform: scale(1.2) translateX(100px);
+        -webkit-transform: scale(1.2) translateX(100px);
     }
 }
-/*----------------------------------------
-14.5 Sidebar Archives Area Styles
-----------------------------------------*/
-.archives {
-    ul {
-        li {
-            font-weight: 500;
-            margin-bottom: 8px;
-            padding-bottom: 8px;
-            text-transform: capitalize;
-            border-bottom: 1px solid $dividerColor;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                color: #222222;
-                @include transition(all, 0.5s, ease-out);
-                &:hover {
-                    color: $primaryColor;
-                    @include transition(all, 0.5s, ease-out);
-                }
-                i {
-                    margin-right: 10px;
-                    font-size: 16px;
-                    color: $primaryColor;
-                }
-            }
-            span {
-                float: right;
-                color: #222222;
-            }
-        }
+
+@-webkit-keyframes bgburnsEast {
+    from {
+        transform: scale(1) translateX(0);
+        -webkit-transform: scale(1) translateX(0);
+    }
+    to {
+        transform: scale(1.2) translateX(100px);
+        -webkit-transform: scale(1.2) translateX(100px);
     }
 }
-/*----------------------------------------
-14.6 Sidebar Popular News Area Styles
-----------------------------------------*/
-.popular-news {
-    .media a {
-        padding-right: 0;
-        margin-right: 10px;
-        img {
-            @include transition(all, 0.3s, ease-out);
-            &:hover {
-                opacity: 0.7;
-                @include transition(all, 0.3s, ease-out);
-            }
-        }
+
+@keyframes bgburnsWest {
+    from {
+        transform: scale(1) translateX(0);
+        -webkit-transform: scale(1) translateX(0);
     }
-    .media-body {
-        h3 {
-            text-transform: capitalize;
-            font-weight: 500;
-            margin-bottom: 12px;
-            line-height: 1.3;
-            font-size: 16px;
-            a {
-                color: $primaryColor;
-                @include transition(all, 0.3s, ease-out);
-                &:hover {
-                    color: #111111;
-                    @include transition(all, 0.3s, ease-out);
-                }
-            }
-        }
-        p {
-            color: #222222;
-            margin-bottom: 0;
-        }
+    to {
+        transform: scale(1.2) translateX(-100px);
+        -webkit-transform: scale(1.2) translateX(-100px);
     }
 }
-/*----------------------------------------
-14.7 Sidebar Filter By Price Area Styles
-----------------------------------------*/
-.filter-by-price {
-    .filter-circle {
-        width: 100%;
-        height: 7px;
-        background: #f2f2f2;
-        display: inline-flex;
-        position: relative;
-        z-index: -1;
-        .filter-bar {
-            background: $primaryColor;
-            width: 84%;
-            margin: 0 auto;
-        }
-        &:before {
-            content: "";
-            background: $primaryColor;
-            height: 22px;
-            width: 22px;
-            position: absolute;
-            top: -8px;
-            left: 20px;
-            z-index: 1;
-            border-radius: 50%;
-        }
-        &:after {
-            content: "";
-            background: $primaryColor;
-            height: 22px;
-            width: 22px;
-            position: absolute;
-            top: -8px;
-            right: 20px;
-            z-index: 1;
-            border-radius: 50%;
-        }
+
+@-webkit-keyframes bgburnsWest {
+    from {
+        transform: scale(1) translateX(0);
+        -webkit-transform: scale(1) translateX(0);
     }
-    ul {
+    to {
+        transform: scale(1.2) translateX(-100px);
+        -webkit-transform: scale(1.2) translateX(-100px);
+    }
+}
+
+@media all and (max-width: 767px) {
+    .flex-direction-nav {
+        display: none;
+    }
+
+    .bgburns .slides li .slide-background {
+        -webkit-animation: none !important;
+        animation: none !important;
+    }
+}
+
+/** Btn **/
+.btn:focus,
+.btn:active,
+.btn:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+/** Social media start **/
+.facebook:hover {
+    color: #3b589e !important;
+}
+
+.twitter:hover {
+    color: #56d7fe !important;
+}
+
+.instagram:hover {
+    color: #fb3958 !important;
+}
+
+.facebook-bg {
+    background: #4867aa;
+}
+
+.facebook-bg:hover {
+    background: #3a5795;
+}
+
+.twitter-bg {
+    background: #56d7fe;
+}
+
+.twitter-bg:hover {
+    background: #2abced;
+}
+
+@media (max-width: 992px) {
+    .navbar-light .navbar-toggler span {
+        color: #fff;
+    }
+
+    .testimonial .testimonia-header {
+        margin: 0 auto 40px;
+        font-size: 30px;
+    }
+
+    .banner-inner {
+        margin: 40px 0 0;
+    }
+
+    .open-none {
+        display: none;
+    }
+
+    .main-header {
+        background: #f9f9f8;
+    }
+
+    .none-992 {
+        display: none;
+    }
+
+    .banner .banner-slider-inner .typed-text {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 45px;
+    }
+
+    .services h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .about-text {
+        padding: 0;
         margin-top: 30px;
-        text-align: center;
-        padding: 8px;
-        li {
-            display: inline-block;
-            margin-right: 5px;
-            font-size: 18px;
-            color: #000000;
-            line-height: 1;
-            span {
-                color: #646464;
-            }
-            &:first-child {
-                background: #eeeeee;
-                border: 1px solid $dividerColor;
-                padding: 10px 20px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
-}
-/*----------------------------------------
-14.8 Sidebar Best Seller Area Styles
-----------------------------------------*/
-.best-seller-box {
-    padding-bottom: 30px;
-    li {
-        border-bottom: 1px solid $dividerColor;
+
+    .about-text h3 {
         margin-bottom: 15px;
-        &:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        .media {
-            a {
-                padding-right: 0;
-                margin: 5px 20px 0 0;
-                @include transition(all, 0.5s, ease-out);
-                &:hover img {
-                    opacity: 0.5;
-                    @include transition(all, 0.5s, ease-out);
-                }
-            }
-            .media-body {
-                h3 {
-                    font-size: 16px;
-                    a {
-                        color: #111111;
-                        @include transition(all, 0.5s, ease-out);
-                        &:hover {
-                            color: $primaryColor;
-                            @include transition(all, 0.5s, ease-out);
-                        }
-                    }
-                }
-                ul {
-                    margin: 7px 0;
-                    li {
-                        border-bottom: none;
-                        display: inline-block;
-                        margin-bottom: 0;
-                        i {
-                            color: #f7c51d;
-                        }
-                        &:last-child i {
-                            color: #a7a7a7;
-                        }
-                    }
-                }
-                p {
-                    color: $primaryColor;
-                    span {
-                        text-decoration: line-through;
-                        margin-right: 10px;
-                        color: #000000;
-                    }
-                }
-            }
-        }
+        font-size: 25px;
+    }
+
+    .main-header .navbar-expand-lg .navbar-nav .link-color {
+        border-radius: 0;
+        margin: 0;
+        background: #f9f9f9 !important;
+        color: #515151;
+    }
+
+    .pages-404 .pages-404-inner h1 {
+        font-size: 50px;
+    }
+
+    .services .mb-35 {
+        margin-bottom: 35px;
+    }
+
+    .services .mb-50 {
+        margin-bottom: 50px;
+    }
+
+    .content-area {
+        padding: 80px 0 50px;
+    }
+
+    .content-area-2 {
+        padding: 80px 0;
+    }
+
+    .content-area-3 {
+        padding: 80px 0 65px;
+    }
+
+    .navbar-collapse {
+        margin: 0px -15px;
+        background: #fff;
+        background: #f9f9f9;
+    }
+
+    #main-header .navbar-expand-lg .navbar-nav .nav-link {
+        color: #000;
+    }
+
+    .main-header .navbar-expand-lg .navbar-nav .active .nav-link {
+        background: #f9f9f9;
+        border-bottom: solid 1px transparent;
+    }
+
+    .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        background: #f9f9f9;
+    }
+
+    .main-title {
+        margin-bottom: 40px;
+    }
+
+    .main-title h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .main-title p {
+        font-size: 17px;
+    }
+
+    .banner .banner-slider-inner h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 45px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: none;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        height: 35px;
+        font-size: 1rem;
+        border-radius: 0;
+        outline: none !important;
+    }
+
+    .main-header .logo {
+        padding: 25px 0;
+    }
+
+    .main-header .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 11px 15px 9px;
+        font-size: 13px;
     }
 }
 
-@import "homepage/footer";
+@media (max-width: 768px) {
+    .banner-inner {
+        margin: 0;
+    }
+
+    .pages-404 .pages-404-inner h1 {
+        font-size: 40px;
+    }
+
+    .banner p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .main-title {
+        margin-bottom: 30px;
+    }
+
+    .main-title-2 {
+        margin-bottom: 30px;
+    }
+
+    .main-title-2 h1 {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .main-title-3 h1 {
+        font-size: 34px;
+    }
+
+    .content-area {
+        padding: 60px 0 30px;
+    }
+
+    .main-title {
+        margin-bottom: 30px;
+    }
+
+    .title-2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .banner .carousel-content {
+        padding: 0 50px;
+    }
+
+    .banner .banner-slider-inner {
+        top: 0%;
+    }
+
+    button:focus {
+        outline: 0 auto -webkit-focus-ring-color;
+    }
+
+    .nav-item.show .nav-link,
+    .nav-link {
+        padding: 9px 13px;
+    }
+
+    .tabbing-box .nav-tabs li {
+        font-size: 11px;
+    }
+
+    .widget {
+        margin-bottom: 0;
+    }
+
+    .banner .carousel-content {
+        padding: 40px 10px 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .box-shadow {
+        box-shadow: none;
+    }
+
+    .main-header .logo {
+        margin-right: 20px;
+    }
+
+    .banner .banner-slider-inner {
+        padding: 10px 5px;
+        top: 0%;
+    }
+
+    .navbar-toggler {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 991px) {
+    .banner img {
+        /*animation: bgburnsEast 25s linear infinite alternate;*/
+        /*-webkit-animation: bgburnsEast 25s linear infinite alternate;*/
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown .dropdown-item:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .sticky-header .navbar-expand-lg .navbar-nav .nav-link {
+        color: #fff;
+    }
+}
+
+.sticky-header {
+    position: fixed;
+    background: transparent;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.2);
+}
+
+.sticky-header .nav-link::after {
+    display: none !important;
+}
+
+.do-sticky .nav-link::after {
+    display: none !important;
+}
+
+.do-sticky-2 .nav-link::after {
+    display: none !important;
+}
+
+.sticky-header .open-offcanvas {
+    color: #fff;
+    display: inline-block;
+}
+
+.sticky-header-scroll {
+    z-index: 999;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-shrink {
+    background: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    top: 0px !important;
+}
+
+.header-shrink .navbar-expand-lg .navbar-nav .nav-link {
+    color: #515151;
+}
+
+.header-shrink .open-offcanvas {
+    color: #515151;
+}
+
+.header-shrink .open-offcanvas i {
+    color: #fff;
+}
+
+.hide-carat .nav-link::after {
+    display: none !important;
+}
+
+.sticky-header .open-offcanvas {
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .header-shrink .link-color {
+        background: #f1f1f1 !important;
+    }
+}

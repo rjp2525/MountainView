@@ -20,7 +20,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "bootstrap-sass": "3.3.6",
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1",
         "nivo-slider": "^3.2.0",
         "normalize.css": "^8.0.1"
     }
