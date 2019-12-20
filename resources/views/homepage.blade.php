@@ -17,14 +17,14 @@
 
     <!-- Social Media Sharing -->
     <meta property="og:site_name" content="Mountain View Landscaping, LLC">
-    <meta property="og:title" content="Mountain View Landscaping serving Southern NH">
+    <meta property="og:title" content="Serving southern New Hampshire's Landscaping Needs">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mountainviewlandscapers.com">
     <meta property="og:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Mountain View Landscaping serving Southern NH residents">
-    <meta property="twitter:description" content="We aim to provide the absolute highest level of quality in every landscaping service that we offer to customers.">
+    <meta property="twitter:title" content="Serving southern New Hampshire's Landscaping Needs">
+    <meta property="twitter:description" content="Providing the highest level of quality in lawn care, snow removal, hardscaping and other landscaping services to southern New Hampshire.">
     <meta property="twitter:url" content="https://mountainviewlandscapers.com">
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
@@ -64,7 +64,7 @@
                                     <a href="#contact" class="nav-link single">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#login" class="nav-link link-color">My Account</a>
+                                    <a href="#" class="nav-link link-color" data-toggle="modal" data-target="#loginsoon">My Account</a>
                                 </li>
                             </ul>
                         </div>
@@ -82,8 +82,8 @@
                         <div class="carousel-content container">
                             <div class="banner-inner">
                                 <h1 class="b-text">Your local top notch landscaper.</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-                                <a href="#" class="btn-md button-theme">Learn More</a>
+                                <p>Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.</p>
+                                <a href="#about" class="btn-md button-theme">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -101,13 +101,14 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-md-2 col-sm-12 text-center">
+                        <div class="col-md-2 col-sm-12 text-center about-logo">
                             <div class="single-image">
                                 <img src="img/logo-about-us.png" alt="Mountain View Landscaping Logo">
                             </div>
                         </div>
                         <div class="col-md-10 col-sm-12">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Mountain View Landscaping proudly provides complete residential and commercial lawn and landscaping services to the southern New Hampshire seacoast area. We offer a wide variety of services including aeration, fertilization, lawn mowing, irrigation start-ups and blow-outs, seasonal spring and fall clean-ups, snow plowing, ice management, hardscape design &amp; installation, hydroseeding and more! We're a local New Hampshire landscaping contractor, so you fan rest assured we truly understand the region and how our interesting weather patterns impact all aspects of landscape design, maintenance and installation.</p>
+                            <p>Our customers are our first priority and we're committed to exceeding their expectations in everything that we do. Our customers are the foundation of our growth and we earn our reputation every day by providing them with a high quality, reliable, efficient and professional service.</p>
                         </div>
                     </div>
                 </div>
@@ -122,69 +123,58 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
+                <div class="col-md-12 text-center">
+                    <p class="section-text">We understand our customers have specific needs to keep things in order. We can help!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
                     <div class="service-post">
                         <span class="fas fa-tractor service-icon"></span>
-                        <h5 class="service-title">Grass Cutting</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h5 class="service-title">Lawn Maintenance</h5>
+                        <p>We can keep your lawn looking great and healthy all season long! Our lawn residential and commercial maintenance service includes weekly mowing, trimming, edging and blowing.</p>
                         <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
                     <div class="service-post">
                         <span class="fas fa-cut service-icon"></span>
-                        <h5 class="service-title">Hedge Trimming</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h5 class="service-title">Trimming &amp; Pruning</h5>
+                        <p>Regular trimming and pruning helps to keep your shrubs healthy and looking beautiful. We can manage your trees and shrubs to ensure strong growth and beauty throughout the year.</p>
                         <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
                     <div class="service-post">
                         <span class="fas fa-tree service-icon"></span>
                         <h5 class="service-title">Mulch Installation</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
-                    <div class="service-post">
-                        <span class="fab fa-canadian-maple-leaf service-icon"></span>
-                        <h5 class="service-title">Seasonal Clean-ups</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Mulching is one of the best things you can do for your beds. It keeps them looking great while also decreasing evaporation by as much as 35%, which means your water usage will be far more efficient.</p>
                         <div class="spacer"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
-                    <div class="service-post">
-                        <span class="fas fa-tractor service-icon"></span>
-                        <h5 class="service-title">Grass Cutting</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
-                    <div class="service-post">
-                        <span class="fas fa-cut service-icon"></span>
-                        <h5 class="service-title">Hedge Trimming</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
-                    <div class="service-post">
-                        <span class="fas fa-tree service-icon"></span>
-                        <h5 class="service-title">Mulch Installation</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
                     <div class="service-post">
                         <span class="fab fa-canadian-maple-leaf service-icon"></span>
                         <h5 class="service-title">Seasonal Clean-ups</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Seasonal clean-ups can make a real difference in the overall appearance of your property and health of your lawn. We provide leaf and mulch bed clean ups as well as curbside leaf pickup.</p>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                    <div class="service-post">
+                        <span class="fas fa-snowplow service-icon"></span>
+                        <h5 class="service-title">Snow &amp; Ice</h5>
+                        <p>We know New England can be pretty unpredictable, which is why we're always ready. We can keep your walkways, parking lots and driveways clear of snow and ice during the hectic winter months.</p>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                    <div class="service-post">
+                        <span class="fas fa-pencil-ruler service-icon"></span>
+                        <h5 class="service-title">Design &amp; Install</h5>
+                        <p>Turn your yard into the envy of the neighborhood with our custom design landscaping. Walkways, patios, retaining walls and water features will enhance the beauty of your outdoor living space.</p>
                         <div class="spacer"></div>
                     </div>
                 </div>
@@ -207,6 +197,23 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="loginsoon" tabindex="-1" role="dialog" aria-labelledby="loginsoonLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Customer Portal Coming Soon!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>We aren't quite finished with this feature yet. The Mountain View customer portal is expected to go live by March of 2020.</p>
+                    <p>We're working diligently this winter to bring you some brand new and incredible online options. Very soon you'll be able to view your service history, pay invoices online, renew your contract, request service changes and much more! In the mean time, if you need to contact us then you can <a class="text-success" href="mailto:contact@mtnview.email">email us</a>, submit the contact form at the bottom of the page or call us at <a class="text-success" href="tel:603-706-0455">(603) 706-0455</a>. We will get back to you as soon as possible during normal business hours (Monday through Friday 8:00 AM to 5:00 PM).</p>
+                    <p>Thank you again for your continued support and patience in this exciting year of growth!</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

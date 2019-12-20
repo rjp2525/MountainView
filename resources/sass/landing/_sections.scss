@@ -139,7 +139,7 @@ section {
     background: #eee;
 
     .section-header {
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
     }
 
     .section-header h3:after {
@@ -175,4 +175,16 @@ section {
     &:active {
         box-shadow: 0 0 35px rgba(106, 175, 8, 0.5);
     }
+}
+
+.about-logo {
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+}
+
+p.section-text {
+    margin-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.5;
 }
