@@ -368,12 +368,22 @@ $font_family_1: "Nunito Sans", sans-serif;
         }
     }
     .logo {
+        font-family: "Nexa Rust Sans", sans-serif;
+        color: #fff;
+        //padding: 29px 0;
+        margin-right: 50px;
+        float: left;
+        font-size: 18px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #6aaf08;
+        }
+
         img {
             height: 20px;
         }
-        padding: 29px 0;
-        margin-right: 50px;
-        float: left;
     }
     .dropdown-menu {
         a {

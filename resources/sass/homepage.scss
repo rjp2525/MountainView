@@ -5,6 +5,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@font-face {
+    font-family: "Nexa Rust Sans";
+    src: url("../fonts/NexaRustSans-Black.eot");
+    src: url("../fonts/NexaRustSans-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/NexaRustSans-Black.woff2") format("woff2"), url("../fonts/NexaRustSans-Black.woff") format("woff"),
+        url("../fonts/NexaRustSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
 .button-theme {
     background: #6aaf08;
     color: #fff;
@@ -329,10 +339,14 @@ h6,
         font-size: 25px;
     }
 
+    .navbar-nav {
+        margin-bottom: 5px;
+    }
+
     .main-header .navbar-expand-lg .navbar-nav .link-color {
         border-radius: 0;
         margin: 0;
-        background: #f9f9f9 !important;
+        //background: #f9f9f9 !important;
         color: #515151;
     }
 
@@ -343,7 +357,7 @@ h6,
     .navbar-collapse {
         margin: 0px -15px;
         background: #fff;
-        background: #f9f9f9;
+        //background: #f9f9f9;
     }
 
     #main-header .navbar-expand-lg .navbar-nav .nav-link {
@@ -356,7 +370,7 @@ h6,
     }
 
     .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
-        background: #f9f9f9;
+        //background: #f9f9f9;
     }
 
     .banner .banner-slider-inner h1 {
@@ -509,10 +523,24 @@ h6,
     transition: 0.5s;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     top: 0px !important;
+
+    .logo {
+        color: #515151;
+    }
+
+    .navbar-light .navbar-toggler span {
+        color: #515151;
+    }
 }
 
 .header-shrink .navbar-expand-lg .navbar-nav .nav-link {
     color: #515151;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #5b9707 !important;
+    }
 }
 
 .header-shrink .open-offcanvas i {
@@ -527,4 +555,8 @@ h6,
     .header-shrink .link-color {
         background: #f1f1f1 !important;
     }
+}
+
+.view-more {
+    margin-top: 20px;
 }

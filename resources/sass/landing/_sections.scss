@@ -55,6 +55,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 .btn.btn-bordered {
     background-color: transparent;
@@ -83,7 +84,7 @@
     }
 }
 .call-to-action .cta-text {
-    padding: 5px 30px 5px 0;
+    padding: 13px 30px 12px 0;
     float: left;
 }
 @media (max-width: 991px) {

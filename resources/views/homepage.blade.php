@@ -41,7 +41,8 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light rounded">
                         <a href="{{ route('static.homepage') }}" class="navbar-brand logo d-flex mr-auto">
-                            <img src="img/logo_nav_white.png" alt="Mountain View Landscaping Logo">
+                            <!--<img src="img/logo_nav_white.png" alt="Mountain View Landscaping Logo">-->
+                            Mountain View Landscaping
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
                             <span class="fa fa-bars"></span>
@@ -177,6 +178,11 @@
                         <p>Turn your yard into the envy of the neighborhood with our custom design landscaping. Walkways, patios, retaining walls and water features will enhance the beauty of your outdoor living space.</p>
                         <div class="spacer"></div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center view-more">
+                    <a href="#" class="btn-md button-theme">View More Services</a>
                 </div>
             </div>
         </div>

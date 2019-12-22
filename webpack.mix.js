@@ -15,5 +15,6 @@ mix.js("resources/js/app.js", "public/js")
     .sass("resources/sass/homepage.scss", "public/css")
     .sass("resources/sass/app.scss", "public/css")
     .copyDirectory("resources/images", "public/img")
+    .copyDirectory("resources/fonts", "public/fonts")
     .version()
     .options({ processCssUrls: false });
