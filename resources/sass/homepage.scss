@@ -34,10 +34,6 @@
     color: #0071bb;
 }
 
-#page_scroller {
-    background: #0071bb;
-}
-
 .btn-color {
     background: #0071bb;
     border-color: #0071bb;
@@ -52,18 +48,6 @@ input[type="checkbox"]:checked + label:before {
     background: #0071bb;
 }
 
-.border-thn {
-    color: #0071bb;
-    border: solid 2px #0071bb;
-    border-radius: 50px;
-}
-
-.border-thn:hover {
-    color: #fff;
-    border: solid 2px #0071bb;
-    background: #0071bb;
-}
-
 .btn-outline:hover {
     border: solid 1px #0071bb;
     background: #0071bb;
@@ -73,11 +57,6 @@ input[type="checkbox"]:checked + label:before {
 .btn-outline {
     border: solid 1px #0071bb;
     color: #0071bb;
-}
-
-.btn-color:hover {
-    background: #0071bb;
-    border-color: #0071bb;
 }
 
 /** MEDIA **/
@@ -120,13 +99,13 @@ input[type="checkbox"]:checked + label:before {
 @import "landing/reboot";
 @import "landing/type";
 @import "landing/images";
-@import "landing/code";
+//@import "landing/code";
 @import "landing/grid";
-@import "landing/tables";
+//@import "landing/tables";
 @import "landing/forms";
 @import "landing/buttons";
 @import "landing/transitions";
-@import "landing/dropdown";
+//@import "landing/dropdown";
 @import "landing/button-group";
 @import "landing/input-group";
 @import "landing/custom-forms";
@@ -135,22 +114,19 @@ input[type="checkbox"]:checked + label:before {
 @import "landing/card";
 @import "landing/breadcrumb";
 @import "landing/pagination";
-@import "landing/badge";
-@import "landing/jumbotron";
+//@import "landing/badge";
+//@import "landing/jumbotron";
 @import "landing/alert";
 @import "landing/progress";
-@import "landing/media";
-@import "landing/list-group";
+//@import "landing/media";
+//@import "landing/list-group";
 @import "landing/close";
-@import "landing/toasts";
+//@import "landing/toasts";
 @import "landing/modal";
 @import "landing/tooltip";
-@import "landing/popover";
+//@import "landing/popover";
 @import "landing/carousel";
-@import "landing/spinners";
-@import "landing/utilities";
-@import "landing/print";
-@import "landing/sections";
+//@import "landing/spinners";
 
 // @import "landing/vendor/magnificent-popup";
 // @import "landing/vendor/jq-selectbox";
@@ -254,7 +230,7 @@ h6,
     border-radius: 3px;
 }
 
-#page_scroller {
+/**#page_scroller {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -272,7 +248,7 @@ h6,
     right: 25px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-}
+}**/
 
 /** Btn **/
 .btn:focus,
@@ -283,7 +259,7 @@ h6,
 }
 
 /** Social media start **/
-.facebook:hover {
+/**.facebook:hover {
     color: #3b589e !important;
 }
 
@@ -309,7 +285,7 @@ h6,
 
 .twitter-bg:hover {
     background: #2abced;
-}
+}**/
 
 @media (max-width: 992px) {
     .navbar-light .navbar-toggler span {
@@ -470,18 +446,6 @@ h6,
 }
 
 @media (min-width: 991px) {
-    /**.dropdown:hover > .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown .dropdown-item:hover > .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-submenu:hover > .dropdown-menu {
-        display: block;
-    }**/
-
     .sticky-header .navbar-expand-lg .navbar-nav .nav-link {
         color: #fff;
     }
@@ -543,14 +507,6 @@ h6,
     }
 }
 
-.header-shrink .open-offcanvas i {
-    color: #fff;
-}
-
-.sticky-header .open-offcanvas {
-    color: #fff;
-}
-
 @media (min-width: 992px) {
     .header-shrink .link-color {
         background: #f1f1f1 !important;
@@ -560,3 +516,63 @@ h6,
 .view-more {
     margin-top: 20px;
 }
+
+.message .form-control {
+    min-height: 150px;
+}
+
+.contact .form-control {
+    //background-color: #dfdfdf;
+    //border: 0.125rem solid #ccc;
+
+    &:focus {
+        border-color: #79c709;
+    }
+}
+
+.contact-info {
+    .contact-item {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h6 {
+        margin-top: 0;
+        text-transform: uppercase;
+        color: #3c3f46;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    p {
+        font-size: 14px;
+        color: #737475;
+        font-weight: normal;
+        line-height: 28px;
+        margin: 0 0 10px;
+
+        a {
+            color: #6aaf08;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: #79c709;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@import "landing/utilities";
+@import "landing/print";
+@import "landing/sections";

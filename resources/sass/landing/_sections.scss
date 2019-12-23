@@ -136,7 +136,8 @@ section {
     font-size: 16px;
 }
 
-.services {
+.services,
+.contact {
     background: #eee;
 
     .section-header {
@@ -188,4 +189,209 @@ p.section-text {
     margin-bottom: 2rem;
     font-size: 20px;
     line-height: 1.5;
+}
+
+/** Work Section  */
+#work .work-container {
+    margin-bottom: 0;
+}
+
+#work .work-item {
+    padding: 0;
+}
+
+.work .row.section-header {
+    margin-bottom: 20px;
+}
+
+.work {
+    padding-bottom: 0 !important;
+}
+
+.subheading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.work-img i.project-plus {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin-top: -20px;
+    width: 100%;
+}
+
+.work-container {
+    margin-bottom: 30px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-item > a {
+    display: block;
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.work-item .work-description {
+    margin-top: 20px;
+}
+
+.work-item .work-description h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.work-item .work-description h2 {
+    color: #3c3f46;
+}
+
+.work-item .work-description > span {
+    color: #969ca7;
+    font-size: 14px;
+}
+
+/**.work-item .work-description h2:hover,
+.work-item .work-description > span:hover {
+    color: #0ccfa8;
+}**/
+
+.work-item .work-overlay {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.work-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-item:hover .work-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.work-hover .work-container {
+    margin-bottom: 0;
+}
+
+.work-hover .work-description {
+    padding: 18px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: auto;
+    bottom: -81px;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.work-hover .work-item:hover .work-img img {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.work-hover .work-item:hover .work-description {
+    bottom: 0;
+}
+
+.work-hover .work-item:hover .project-icons {
+    position: absolute;
+    top: 40%;
+    margin-top: -20px;
+}
+
+.contact-map-wrapper {
+    padding-bottom: 0;
+}
+h4.contact-heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+}
+.contact-form textarea {
+    min-height: 150px;
+}
+
+.contact p.section-text {
+    font-size: 16px;
+    line-height: 30px;
+    /* margin-bottom: 0; */
+    color: #707070;
+}
+
+.contact {
+    padding-bottom: 30px;
+}
+
+.footer-copyright {
+    background: #3e3e3e;
+    font-size: 13px;
+    color: #a8a8a8;
+    padding: 30px 0;
+
+    .links {
+        text-align: right;
+    }
+
+    a {
+        color: #a8a8a8;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fefefe;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
 }

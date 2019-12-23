@@ -40,10 +40,7 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light rounded">
-                        <a href="{{ route('static.homepage') }}" class="navbar-brand logo d-flex mr-auto">
-                            <!--<img src="img/logo_nav_white.png" alt="Mountain View Landscaping Logo">-->
-                            Mountain View Landscaping
-                        </a>
+                        <a href="{{ route('static.homepage') }}" class="navbar-brand logo d-flex mr-auto">Mountain View</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation">
                             <span class="fa fa-bars"></span>
                         </button>
@@ -196,13 +193,224 @@
                             <h5 class="cta-title">We can help bring your lawn and landscape projects to life!</h5>
                         </div>
                         <div class="cta-button">
-                            <a href="#" class="btn btn-bordered">Request a quote</a>
+                            <a href="#contact" class="btn btn-bordered">Request a quote</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="work" id="work">
+        <div class="container">
+            <div class="row section-header">
+                <div class="col-12 text-center">
+                    <h3>Some of Our Past Work</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid work-hover" id="work-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_pelham_cleanup.png" alt="Ground cover bed clean-up in Pelham, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Seasonal Clean-up</h2>
+                                <span>Pelham, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_sandown_mow_clean.png" alt="Fall clean-up and final mowing cut in Sandown, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Fall Cleanup and Final Mowing</h2>
+                                <span>Sandown, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_rochester_driveway.png" alt="Stone driveway parking area addition in Rochester, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Driveway Parking Addition</h2>
+                                <span>Rochester, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_hampton_mowing.png" alt="Weekly mowing service in Hampton, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Lawn Maintenance</h2>
+                                <span>Hampton, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_hooksett_mulch.png" alt="Mulch bed installation in Hooksett, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Mulch Installation</h2>
+                                <span>Hooksett, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_chester_mow.png" alt="Standard weekly mowing service in Chester, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Lawn Maintenance</h2>
+                                <span>Chester, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_boxford_cleanup.png" alt="Heavy spring clean-up in Boxford, MA">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Heavy Spring Clean-up</h2>
+                                <span>Boxford, Massachusetts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_pembroke_mow.png" alt="Standard weekly mowing service in Pembroke, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Lawn Maintenance</h2>
+                                <span>Pembroke, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row section-header">
+                <div class="col-12 text-center">
+                    <h3>Get in touch with us</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="section-text">We're here to help maintain or beautify your property. Your <strong><i>free</i></strong> initial consultation is only a call, text or email away!</p>
+                </div>
+            </div>
+            <div class="row">
+                <form action="#" method="GET" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group name">
+                                        <input type="text" name="name" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group email">
+                                        <input type="email" name="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group subject">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group number">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone number">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group type">
+                                        <select class="form-control" id="request-type" name="request-type">
+                                            <option value="" selected disabled>Please select a service...</option>
+                                            <option>Lawn Care (Mowing)</option>
+                                            <option>Fertilization</option>
+                                            <option>Irrigation</option>
+                                            <option>Seasonal Clean-up</option>
+                                            <option>Hydroseeding or sod installation</option>
+                                            <option>Snow Plowing</option>
+                                            <option>Dethatching and Aerating</option>
+                                            <option>Hardscapes and retaining walls</option>
+                                            <option value="">Tree and shrub trimming</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group message">
+                                        <textarea class="form-control" name="message" placeholder="Enter any specific information about your request here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send-btn text-center">
+                                        <button type="button" class="btn-md button-theme">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <h6>Office Address</h6>
+                                    <p>2 Main Street<br>Fremont, New Hampshire<br>03044-3319</p>
+                                </div>
+                                <div class="contact-item">
+                                    <h6>Phone Number</h6>
+                                    <p><a href="tel:+1-603-706-0455">+1 (603) 706-0455</a> </p>
+                                </div>
+                                <div class="contact-item">
+                                    <h6>Email Address</h6>
+                                    <p><a href="mailto:contact@mtnview.email">contact@mtnview.email</a></p>
+                                </div>
+                                <div class="contact-item">
+                                    <h6>Office Hours</h6>
+                                    <p>Monday-Friday: <strong>8:00 AM - 5:00 PM</strong><br>
+                                    Saturday-Sunday: <strong>CLOSED</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">&copy; 2020 Mountain View Landscaping LLC, All Rights Reserved.</div>
+                <div class="col-lg-6 col-md-12 links">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="loginsoon" tabindex="-1" role="dialog" aria-labelledby="loginsoonLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -220,10 +428,7 @@
             </div>
         </div>
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="{{ asset(mix('js/app.js')) }}"></script>
