@@ -6,8 +6,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
 
     <title>Mountain View Landscaping</title>
-    <!-- TODO: Write a 160 character description that captures the users attention -->
-    <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.">
+    <meta name="description" content="Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
