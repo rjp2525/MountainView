@@ -16,15 +16,15 @@
 
     <!-- Social Media Sharing -->
     <meta property="og:site_name" content="Mountain View Landscaping, LLC">
-    <meta property="og:title" content="Serving southern New Hampshire's Landscaping Needs">
+    <meta property="og:title" content="Privacy Policy - Mountain View Landscaping">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mountainviewlandscapers.com">
+    <meta property="og:url" content="https://mountainviewlandscapers.com/privacy">
     <meta property="og:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Serving southern New Hampshire's Landscaping Needs">
-    <meta property="twitter:description" content="Providing the highest level of quality in lawn care, snow removal, hardscaping and other landscaping services to southern New Hampshire.">
-    <meta property="twitter:url" content="https://mountainviewlandscapers.com">
+    <meta property="twitter:title" content="Privacy Policy - Mountain View Landscaping">
+    <meta property="twitter:description" content="Privacy policy for Mountain View Landscaping">
+    <meta property="twitter:url" content="https://mountainviewlandscapers.com/privacy">
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
     <!-- CSS -->
@@ -46,19 +46,19 @@
                         <div class="navbar-collapse collapse w-100" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a href="#top" class="nav-link single">Home</a>
+                                    <a href="{{ route('static.homepage') }}" class="nav-link single">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#about" class="nav-link single">About</a>
+                                    <a href="{{ route('static.homepage') }}" class="nav-link single">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#services" class="nav-link single">Services</a>
+                                    <a href="{{ route('static.homepage') }}" class="nav-link single">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#work" class="nav-link single">Our Work</a>
+                                    <a href="{{ route('static.homepage') }}" class="nav-link single">Our Work</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#contact" class="nav-link single">Contact</a>
+                                    <a href="{{ route('static.homepage') }}" class="nav-link single">Contact</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link link-color" data-toggle="modal" data-target="#loginsoon">My Account</a>
