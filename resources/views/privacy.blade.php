@@ -142,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact noheading" id="contact">
         <div class="container">
             <div class="row contact-info">
                 <div class="col-lg-3">

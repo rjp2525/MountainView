@@ -366,6 +366,12 @@ h4.contact-heading {
     padding-bottom: 30px;
 }
 
+.contact.noheading {
+    @include media-breakpoint-down(md) {
+        padding-top: 15px;
+    }
+}
+
 .footer-copyright {
     background: #3e3e3e;
     font-size: 13px;
