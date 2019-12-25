@@ -14,3 +14,7 @@
 Route::get('/', ['as' => 'static.homepage', 'uses' => 'HomepageController@index']);
 Route::get('privacy', ['as' => 'static.privacy', 'uses' => 'HomepageController@privacy']);
 Route::post('contact', ['as' => 'static.contact.submit', 'uses' => 'HomepageController@contact']);
+
+Route::group(['middleware' => 'beta.cookie', 'prefix' => 'portal', 'namespace' => 'Client'], function() {
+    Route::get('/', ['as' => 'portal.index', 'uses' => 'IndexController@index']);
+});
