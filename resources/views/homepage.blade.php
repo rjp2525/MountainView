@@ -405,7 +405,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">&copy; 2020 Mountain View Landscaping LLC, All Rights Reserved.</div>
                 <div class="col-lg-6 col-md-12 links">
-                    <a href="#">Privacy Policy</a>
+                    <a href="{{ route('static.privacy') }}">Privacy Policy</a>
                 </div>
             </div>
         </div>

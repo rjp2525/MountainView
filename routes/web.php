@@ -12,4 +12,5 @@
 */
 
 Route::get('/', ['as' => 'static.homepage', 'uses' => 'HomepageController@index']);
+Route::get('privacy', ['as' => 'static.privacy', 'uses' => 'HomepageController@privacy']);
 Route::post('contact', ['as' => 'static.contact.submit', 'uses' => 'HomepageController@contact']);

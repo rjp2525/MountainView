@@ -15,4 +15,14 @@ class HomepageController extends Controller
     {
         return view('homepage');
     }
+
+    /**
+     * Display the privacy policy page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function privacy()
+    {
+        return view('privacy');
+    }
 }
