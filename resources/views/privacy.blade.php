@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Privacy Policy :: Mountain View Landscaping</title>
     <meta name="description" content="Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.">

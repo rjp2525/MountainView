@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Mountain View Landscaping</title>
     <meta name="description" content="Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.">
@@ -321,82 +322,80 @@
                 </div>
             </div>
             <div class="row">
-                <form action="#" method="GET" enctype="multipart/form-data">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group name">
-                                        <input type="text" name="name" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group email">
-                                        <input type="email" name="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group subject">
-                                        <input type="text" name="subject" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group number">
-                                        <input type="text" name="phone" class="form-control" placeholder="Phone number">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group type">
-                                        <select class="form-control" id="request-type" name="request-type">
-                                            <option value="" selected disabled>Please select a service...</option>
-                                            <option>Lawn Care (Mowing)</option>
-                                            <option>Fertilization</option>
-                                            <option>Irrigation</option>
-                                            <option>Seasonal Clean-up</option>
-                                            <option>Hydroseeding or sod installation</option>
-                                            <option>Snow Plowing</option>
-                                            <option>Dethatching and Aerating</option>
-                                            <option>Hardscapes and retaining walls</option>
-                                            <option value="">Tree and shrub trimming</option>
-                                            <option>Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group message">
-                                        <textarea class="form-control" name="message" placeholder="Enter any specific information about your request here"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="send-btn text-center">
-                                        <button type="button" class="btn-md button-theme">Send Message</button>
-                                    </div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group name">
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <h6>Office Address</h6>
-                                    <p>2 Main Street<br>Fremont, New Hampshire<br>03044-3319</p>
+                            <div class="col-md-6">
+                                <div class="form-group email">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
                                 </div>
-                                <div class="contact-item">
-                                    <h6>Phone Number</h6>
-                                    <p><a href="tel:+1-603-706-0455">+1 (603) 706-0455</a> </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group subject">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject">
                                 </div>
-                                <div class="contact-item">
-                                    <h6>Email Address</h6>
-                                    <p><a href="mailto:contact@mtnview.email">contact@mtnview.email</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group number">
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone number">
                                 </div>
-                                <div class="contact-item">
-                                    <h6>Office Hours</h6>
-                                    <p>Monday-Friday: <strong>8:00 AM - 5:00 PM</strong><br>
-                                    Saturday-Sunday: <strong>CLOSED</strong></p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group type">
+                                    <select class="form-control" id="request-type" name="request-type">
+                                        <option value="" selected disabled>Please select a service...</option>
+                                        <option>Lawn Care (Mowing)</option>
+                                        <option>Fertilization</option>
+                                        <option>Irrigation</option>
+                                        <option>Seasonal Clean-up</option>
+                                        <option>Hydroseeding or sod installation</option>
+                                        <option>Snow Plowing</option>
+                                        <option>Dethatching and Aerating</option>
+                                        <option>Hardscapes and retaining walls</option>
+                                        <option value="">Tree and shrub trimming</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group message">
+                                    <textarea class="form-control" name="message" placeholder="Enter any specific information about your request here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="send-btn text-center">
+                                    <button type="button" class="btn-md button-theme">Send Message</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
+                    <div class="col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h6>Office Address</h6>
+                                <p>2 Main Street<br>Fremont, New Hampshire<br>03044-3319</p>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Phone Number</h6>
+                                <p><a href="tel:+1-603-706-0455">+1 (603) 706-0455</a> </p>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Email Address</h6>
+                                <p><a href="mailto:contact@mtnview.email">contact@mtnview.email</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Office Hours</h6>
+                                <p>Monday-Friday: <strong>8:00 AM - 5:00 PM</strong><br>
+                                Saturday-Sunday: <strong>CLOSED</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
