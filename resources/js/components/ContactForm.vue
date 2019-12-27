@@ -1,7 +1,7 @@
 <template>
     <!-- HTML Template -->
     <div>
-        <form action="#" @form.prevent="onSubmit" method="POST" enctype="multipart/form-data"></form>
+        <form @form.prevent="onSubmit"></form>
     </div>
 
     <!--<div class="row">

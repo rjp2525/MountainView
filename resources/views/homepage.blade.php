@@ -273,6 +273,18 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 work-item">
                     <div class="work-container">
                         <div class="work-img">
+                            <img src="img/past_work_bedford_cleanup.png" alt="Spring leaf cleanup in Bedford, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Spring Leaf Cleanup</h2>
+                                <span>Bedford, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
                             <img src="img/past_work_chester_mow.png" alt="Standard weekly mowing service in Chester, NH">
                             <span class="work-overlay"></span>
                             <div class="work-description">
@@ -302,6 +314,43 @@
                             <div class="work-description">
                                 <h2>Lawn Maintenance</h2>
                                 <span>Pembroke, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_dover_cleanup.png" alt="Fall leaf clean-up and removal in Dover, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Fall Leaf Clean-up/Removal</h2>
+                                <span>Dover, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_manchester_cleanup.png" alt="Fall leaf clean-up and removal in Manchester, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Fall Leaf Clean-up/Removal</h2>
+                                <span>Manchester, New Hampshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 work-item">
+                    <div class="work-container">
+                        <div class="work-img">
+                            <img src="img/past_work_portsmouth_mulch.png" alt="Annual mulch bed refresh in Portsmouth, NH">
+                            <span class="work-overlay"></span>
+                            <div class="work-description">
+                                <h2>Spring Mulch Installation</h2>
+                                <span>Portsmouth, New Hampshire</span>
                             </div>
                         </div>
                     </div>
