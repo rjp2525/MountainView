@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\HomepageContactFormRequest;
 
 class HomepageController extends Controller
 {
@@ -24,5 +25,15 @@ class HomepageController extends Controller
     public function privacy()
     {
         return view('privacy');
+    }
+
+    public function contact(HomepageContactFormRequest $request)
+    {
+        $json = [
+            'success' => true,
+            'message' => 'Your message has been sent successfully. We will be in touch shortly!'
+        ];
+
+        return response()->json($json);
     }
 }
