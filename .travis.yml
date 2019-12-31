@@ -19,3 +19,4 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl --request POST https://forge.laravel.com/servers/336955/sites/909654/deploy/http?token=4pbhnWCZfVp2FS2nFBrikqqjSERD1nuWkCsA9H05)
