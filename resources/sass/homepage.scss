@@ -8,10 +8,8 @@
 @font-face {
     font-family: "Nexa Rust Sans";
     src: url("../fonts/NexaRustSans-Black.eot");
-    src: url("../fonts/NexaRustSans-Black.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/NexaRustSans-Black.woff2") format("woff2"),
-        url("../fonts/NexaRustSans-Black.woff") format("woff"),
+    src: url("../fonts/NexaRustSans-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/NexaRustSans-Black.woff2") format("woff2"), url("../fonts/NexaRustSans-Black.woff") format("woff"),
         url("../fonts/NexaRustSans-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
@@ -20,6 +18,11 @@
 .button-theme {
     background: #6aaf08;
     color: #fff;
+
+    &.disabled,
+    &:disabled {
+        background: #999;
+    }
 }
 
 .button-theme:hover {
