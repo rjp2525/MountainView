@@ -11,47 +11,70 @@ class HomeContactFormTest extends TestCase
 {
     /**
      * Test that the server side contact form request can successfully validate
-     * phone number and email addresses.
+     * empty name, phone number and email address fields.
      *
      * @return bool
      */
-    public function testItCanValidatePhoneAndEmail()
+    public function testItChecksForEmptyNameEmailAndPhone()
     {
         // Test that the contact form can validate phone number and email address
-        $form_data_pass = [
-            'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'phone' => '6038955555',
+        $form_data = [
+            'name' => '',
+            'email' => '',
+            'phone' => '',
             'subject' => 'Looking for a walkway installation quote',
             'type' => 'hardscaping',
-            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
         ];
 
-        $response = $this->json('POST', '/contact', $form_data_pass);
+        $response = $this->json('POST', '/contact', $form_data);
+
+        /**
+         * [{
+         *     "message": "The given data was invalid.",
+         *     "errors": {
+         *         "name": [
+         *             "The name field is required."
+         *         ],
+         *         "email": [
+         *             "The email field is required."
+         *         ],
+         *         "phone": [
+         *             "The phone field is required."
+         *         ]
+         *     }
+         * }]
+         */
+
+        $response->assertStatus(422);
+
+        $response->assertJson([
+            'message' => 'The given data was invalid.',
+            'errors' => [
+                'name' => ['The name field is required.'],
+                'email' => ['The email field is required.'],
+                'phone' => ['The phone field is required.']
+            ]
+        ]);
+
+        $form_data['name'] = 'John Doe';
+        $form_data['email'] = 'john@example.com';
+        $form_data['phone'] = '6035555555'; // Real area code is required or it will fail
+
+        $response = $this->json('POST', '/contact', $form_data);
+
+        /**
+         * [{
+         *     "success": true,
+         *     "message": "Your message has been sent successfully. We will be in touch shortly!"
+         * }]
+         */
 
         $response->assertStatus(200);
 
         $response->assertJson([
-            'success' => 'true',
+            'success' => true,
             'message' => 'Your message has been sent successfully. We will be in touch shortly!'
-        ]);
-
-        /**
-         * Test to see if it catches failed validation on email and phone number.
-         */
-
-        $form_data_pass['email'] = '';
-        $form_data_pass['phone'] = '';
-
-        $response_fail = $this->json('POST', '/contact', $form_data_pass);
-
-        $response_fail->assertStatus(422);
-
-        $response_fail->assertJson([
-            'errors' => [
-                'email' => ['The email field is required.'],
-                'phone' => ['The phone field is required.']
-            ]
         ]);
     }
 
@@ -60,7 +83,7 @@ class HomeContactFormTest extends TestCase
      *
      * @return bool
      */
-    public function testItCanValidateInvalidPhone()
+    public function testItFailsValidationForInvalidData()
     {
         // Test Invalid Phone
         $form_data_fail = [
@@ -102,6 +125,7 @@ class HomeContactFormTest extends TestCase
     public function testItFiresEmail()
     {
         // TODO
+        $this->assertTrue(true);
     }
 
     /**
@@ -113,5 +137,6 @@ class HomeContactFormTest extends TestCase
     public function testItGetsAddedToContactUsTableInDatabase()
     {
         // TODO
+        $this->assertTrue(true);
     }
 }

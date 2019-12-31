@@ -27,6 +27,13 @@ class HomepageController extends Controller
         return view('privacy');
     }
 
+    /**
+     * Process the contact form submission.
+     *
+     * @param  HomepageContactFormRequest $request
+     *
+     * @return mixed
+     */
     public function contact(HomepageContactFormRequest $request)
     {
         $json = [
