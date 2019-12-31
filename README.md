@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://mountainviewlandscapers.com/img/social_share_card.png" width="600" alt="Mountain View Landscaping" />
+  <img src="https://mountainviewlandscapers.com/img/logo-1024.png" width="300" alt="Mountain View Landscaping" />
 </div>
 <p align="center">
   <a href="https://laravel.com">
