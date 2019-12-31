@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\HomepageContactFormRequest;
+use App\Models\ContactForm;
+use App\Events\ContactFormSubmit as ContactSubmitEvent;
 
 class HomepageController extends Controller
 {
@@ -36,6 +38,10 @@ class HomepageController extends Controller
      */
     public function contact(HomepageContactFormRequest $request)
     {
+        $result = ContactForm::create($request->all());
+
+        event(new ContactSubmitEvent($result));
+
         $json = [
             'success' => true,
             'message' => 'Your message has been sent successfully. We will be in touch shortly!'

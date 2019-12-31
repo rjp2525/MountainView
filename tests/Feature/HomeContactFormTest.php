@@ -6,9 +6,16 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use Propaganistas\LaravelPhone\PhoneNumber;
+use Illuminate\Support\Facades\Event;
+use App\Events\ContactFormSubmit as ContactFormSubmitted;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormSubmit as ContactFormMail;
+use App\Models\ContactForm as ContactModel;
 
 class HomeContactFormTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * Test that the server side contact form request can successfully validate
      * empty name, phone number and email address fields.
@@ -17,7 +24,6 @@ class HomeContactFormTest extends TestCase
      */
     public function testItChecksForEmptyNameEmailAndPhone()
     {
-        // Test that the contact form can validate phone number and email address
         $form_data = [
             'name' => '',
             'email' => '',
@@ -79,42 +85,112 @@ class HomeContactFormTest extends TestCase
     }
 
     /**
-     * Test the form submission can validate and fail on invalid phone number format.
+     * Test the form submission can validate and fail on invalid phone or email.
      *
      * @return bool
      */
     public function testItFailsValidationForInvalidData()
     {
-        // Test Invalid Phone
-        $form_data_fail = [
+        $form_data = [
             'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'phone' => '555-555-5555-5555',
+            'email' => 'example@invalid@email.com',
+            'phone' => '5555-555-55555',
             'subject' => 'Looking for a walkway installation quote',
             'type' => 'hardscaping',
-            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
         ];
 
-        $response = $this->json('POST', '/contact', $form_data_fail);
+        $response = $this->json('POST', '/contact', $form_data);
+
+        /**
+         * [{
+         *     "message": "The given data was invalid.",
+         *     "errors": {
+         *         "email": [
+         *             "The email must be a valid email address."
+         *         ],
+         *         "phone": [
+         *             "The phone field contains an invalid number."
+         *         ]
+         *     }
+         * }]
+         */
 
         $response->assertStatus(422);
 
         $response->assertJson([
             'errors' => [
+                'email' => ['The email must be a valid email address.'],
                 'phone' => ['The phone field contains an invalid number.'],
             ]
         ]);
 
-        $form_data_fail['phone'] = PhoneNumber::make('603-555-5555', 'US');
+        $form_data['email'] = 'john@example.com';
+        $form_data['phone'] = '603-555-5555';
 
-        $response_success = $this->json('POST', '/contact', $form_data_fail);
+        $response = $this->json('POST', '/contact', $form_data);
 
-        $response_success->assertStatus(200);
+        /**
+         * [{
+         *     "success": true,
+         *     "message": "Your message has been sent successfully. We will be in touch shortly!"
+         * }]
+         */
 
-        $response_success->assertJson([
-            'success' => 'true',
+        $response->assertStatus(200);
+
+        $response->assertJson([
+            'success' => true,
             'message' => 'Your message has been sent successfully. We will be in touch shortly!'
         ]);
+    }
+
+    /**
+     * Verify that a validated contact request is added to the database successfully.
+     *
+     * @return bool
+     */
+    public function testItAddsContactFormSubmissionToDatabase()
+    {
+        $data = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'phone' => '603-555-5555',
+            'subject' => 'Looking for a walkway installation quote',
+            'type' => 'hardscaping',
+            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
+        ];
+
+        $this->json('POST', '/contact', $data);
+
+        $this->assertDatabaseHas('contact_form_data', $data);
+    }
+
+    /**
+     * Ensure an email event is fired after the contact form data is added to the database.
+     *
+     * @return bool
+     */
+    public function testItFiresEmailEvent()
+    {
+        Event::fake();
+
+        $data = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'phone' => '603-555-5555',
+            'subject' => 'Looking for a walkway installation quote',
+            'type' => 'hardscaping',
+            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
+        ];
+
+        $this->json('POST', '/contact', $data);
+
+        $result = ContactModel::first();
+
+        Event::assertDispatched(ContactFormSubmitted::class, function ($e) use ($result) {
+            return $e->data->id === $result->id;
+        });
     }
 
     /**
@@ -122,21 +198,26 @@ class HomeContactFormTest extends TestCase
      *
      * @return bool
      */
-    public function testItFiresEmail()
+    public function testItSendsAnEmailAfterEventDispatched()
     {
-        // TODO
-        $this->assertTrue(true);
-    }
+        Mail::fake();
 
-    /**
-     * Test to make sure the contact information is also stored in a database table
-     * for review and reponse in the administration panel. (future feature)
-     *
-     * @return bool
-     */
-    public function testItGetsAddedToContactUsTableInDatabase()
-    {
-        // TODO
-        $this->assertTrue(true);
+        $data = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'phone' => '603-555-5555',
+            'subject' => 'Looking for a walkway installation quote',
+            'type' => 'hardscaping',
+            'message' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
+        ];
+
+        $this->json('POST', '/contact', $data);
+
+        $result = ContactModel::first();
+
+        Mail::assertSent(ContactFormMail::class, function ($mail) use ($result) {
+            $mail->build();
+            return $mail->hasFrom($result->email);
+        });
     }
 }
