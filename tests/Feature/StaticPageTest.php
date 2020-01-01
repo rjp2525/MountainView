@@ -36,4 +36,32 @@ class StaticPageTest extends TestCase
 
         $response->assertSee('Privacy Policy');
     }
+
+    /**
+     * Make sure we can see the privacy policy page as well.
+     *
+     * @return void
+     */
+    public function testTheServicesPageIsDisplayed()
+    {
+        $response = $this->get('/services');
+
+        $response->assertStatus(200);
+
+        $response->assertSee('Quality Landscaping Services');
+    }
+
+    /**
+     * Make sure we can see the privacy policy page as well.
+     *
+     * @return void
+     */
+    public function testTheAboutPageIsDisplayed()
+    {
+        $response = $this->get('/about');
+
+        $response->assertStatus(200);
+
+        $response->assertSee('About Mountain View Landscaping');
+    }
 }

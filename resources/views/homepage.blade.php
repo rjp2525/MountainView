@@ -6,8 +6,8 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Mountain View Landscaping</title>
-    <meta name="description" content="Looking for landscaping services in the Rockinham, New Hampshire area? We offer full-service design and installation services for your residential and commercial properties.">
+    <title>Mountain View Landscaping - Southern New Hampshire's Quality Landscaping and Lawn Care</title>
+    <meta name="description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial property.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -18,13 +18,14 @@
     <!-- Social Media Sharing -->
     <meta property="og:site_name" content="Mountain View Landscaping, LLC">
     <meta property="og:title" content="Serving southern New Hampshire's Landscaping Needs">
+    <meta property="og:description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial properties.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mountainviewlandscapers.com">
     <meta property="og:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Serving southern New Hampshire's Landscaping Needs">
-    <meta property="twitter:description" content="Providing the highest level of quality in lawn care, snow removal, hardscaping and other landscaping services to southern New Hampshire.">
+    <meta property="twitter:title" content="Mountain View Landscaping - Serving Southern New Hampshire's Landscaping and Lawn Care Needs">
+    <meta property="twitter:description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial properties.">
     <meta property="twitter:url" content="https://mountainviewlandscapers.com">
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
@@ -53,7 +54,7 @@
                                     <a href="#about" class="nav-link single">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#services" class="nav-link single">Services</a>
+                                    <a href="{{ route('static.services') }}" class="nav-link single">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#work" class="nav-link single">Our Work</a>
@@ -177,7 +178,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center view-more">
-                    <a href="#" class="btn-md button-theme">View More Services</a>
+                    <a href="{{ route('static.services') }}" class="btn-md button-theme">View More Services</a>
                 </div>
             </div>
         </div>

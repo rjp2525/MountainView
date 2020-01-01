@@ -6,8 +6,8 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Services - Mountain View Landscaping</title>
-    <meta name="description" content="Mountain View Landscaping is a full-service landscaping company in Fremont, New Hampshire offering landscape design, landscape installation, lawn care and snow removal.">
+     <title>Services We Offer - Mountain View Landscaping</title>
+    <meta name="description" content="If you're looking for landscaping services in the Rockingham or Merrimack NH areas we have you covered. Check out our complete list of services including snow removal, lawn care and maintenance, trimming, hardscaping design and installation and more!">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -17,14 +17,15 @@
 
     <!-- Social Media Sharing -->
     <meta property="og:site_name" content="Mountain View Landscaping, LLC">
-    <meta property="og:title" content="Services - Mountain View Landscaping">
+    <meta property="og:title" content="Landscaping Services Offered to Southern New Hampshire">
+    <meta property="og:description" content="Looking for landscaping services in the Rockingham or Merrimack NH area? We have you covered! Check out our complete list of services including snow removal, lawn care and maintenance, trimming, hardscaping design and installation and more!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mountainviewlandscapers.com/services">
     <meta property="og:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Services - Mountain View Landscaping">
-    <meta property="twitter:description" content="Mountain View Landscaping is a full-service landscaping company in Fremont, New Hampshire offering landscape design, landscape installation, lawn care and snow removal.">
+    <meta property="twitter:title" content="Mountain View Landscaping - Serving Southern New Hampshire's Landscaping and Lawn Care Needs">
+    <meta property="twitter:description" content="Looking for landscaping services in the Rockingham or Merrimack NH area? We have you covered! Check out our complete list of services including snow removal, lawn care and maintenance, trimming, hardscaping design and installation and more!">
     <meta property="twitter:url" content="https://mountainviewlandscapers.com/services">
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
@@ -53,7 +54,7 @@
                                     <a href="{{ route('static.homepage') }}" class="nav-link single">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('static.homepage') }}" class="nav-link single">Services</a>
+                                    <a href="{{ route('static.services') }}" class="nav-link single">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ route('static.homepage') }}" class="nav-link single">Our Work</a>
@@ -94,6 +95,11 @@
                     <h3>Quality Landscaping Services</h3>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="section-text">Increase curb appeal with beautiful landscaping! You don't have to juggle multiple contractors and landscaping services to have a well-maintained lawn or landscape. Mountain View Landscaping offers sustainable landscaping services that will keep your residential or commercial landscape in peak condition all year long.</p>
+                </div>
+            </div>
             <div class="row services-full">
                 <div class="col-12">
                     <div class="row">
@@ -104,7 +110,7 @@
                         </div>
                         <div class="col-md-10 col-sm-12">
                             <h4 class="service-title">Commercial and Residential Lawn Maintenance</h4>
-                            <p>Lawn care and lawn maintenance in the Rockingham County area is key to preserving a beautiful, healthy yard all year-round. After you have worked hard to create the outdoor living environment of your dreams or developed a high-quality landscape at your home or business, Mountain View Landscaping's lawn care and lawn maintenance services can keep it healthy and looking its best!</p>
+                            <p>Regular weekly lawn care and maintenance in the Rockingham and Merrimack County areas are key to preserving a beautiful, healthy yard all year round. You've worked hard to create the outdoor living environment of your dreams, probably spent a good amount of money developing that high quality landscape at your home or business too. That's why Mountain View Landscaping's lawn care and maintenance services are here to help keep it healthy and looking its best all season long!</p>
                         </div>
                     </div>
                 </div>
@@ -119,8 +125,97 @@
                         </div>
                         <div class="col-md-10 col-sm-12">
                             <h4 class="service-title">Hedge, Bush and Tree Pruning/Trimming</h4>
-                            <p>Beyond enhancing your garden and improving home value, a professional bush trimming can help you keep hedges healthy and less prone to attracting bugs by removing dead branches and diseased areas. This will also promote new growth, leading to denser, fuller bushes with fewer bald areas. That means increased privacy which is likely one of the reasons why you’re growing bushes in the first place!</p>
-                            <p>Mountain View Landscaping is licensed and insured, available to trim all types and sizes of bushes, hedges or shrubs. We’ll work with you to get everything in great shape, then create an ongoing trimming and shaping plan to ensure your hedges are healthy and happy for many years to come.</p>
+                            <p>Beyond enhancing your garden and improving home value, a professional bush and tree pruning or trimming keeps your planted features healthy and less prone to attracting unwanted pests. Removing dead, broken or diseased areas of your bushes promotes new growth and leads to denser coverage. Mountain View Landscaping is licensed and insured to trim all types and sizes of bushes, hedges and shrubs. We'll work with you to get everything in great shape then discuss an ongoing trimming plan to ensure those shrubs stay healthy and happy for years to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_mulch.svg" alt="Mulch bed refreshing and installation">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Mulch Bed Installation and Refreshing</h4>
+                            <p>We can help make your landscape look better than ever with proper edging, mulching and weeding. Your trees, shrubs and bedding plants will benefit from this routine mulching service as mulch helps retain as much as 35% of moisture. Fresh and properly installed mulch not only makes your landscape features beautiful, but it also helps with weed control, temperature control, and the introduction of organic material to your landscape beds. The mulch we use is a cedar blend unless otherwise requested, which serves as a natural bug repellent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_leaf_removal.svg" alt="Seasonal leaf clean-up and removal">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Spring, Fall Leaf Clean-up and Removal</h4>
+                            <p>We live in New England, one of the top peak fall foliage viewing desinations in the country. We have a lot of leaves up here and often times it can be cumbersome to rake them up, bag them and discard of all that yard debris when the season ends. Sometimes you get busy and it turns into a spring clean-up. Mountain View Landscaping is fully equipped to take on the largest (or smallest) leaf removals and clean-ups in area. We also offer a curbside pickup option!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_snow_removal.svg" alt="Snow plowing, sidewalk shoveling and ice management">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Snow Plowing, Sidewalk Shoveling and Ice Management</h4>
+                            <p>There is no doubt that New England winters are brutal and bring plenty of snow and ice. When that winter weather strikes, Mountain View Landscaping is prepared to serve both residential and commercial customers. We offer full service snow plowing, sidewalk and walkway shoveling, sanding and salting to keep your home or business safe from any potential winter hazards. Our team is on call 24/7 during snow events!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_design.svg" alt="Landscape design and installation">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Landscape Feature Design &amp; Installation</h4>
+                            <p>Every outdoor feature on your property is part of a complete landscape. Mountain View Landscaping can design and install each elemeent so you have a picturesque and inviting outdoor space. Our residential and commercial landscape design and installation services include walkways, patios, sod, plants, trees, patios, retaining walls, landscape lighting and more! From the time we collaborate on the design of your first landscape feature to the continued maintenance of your gardens over the years, you’ll reap the benefits of our wide range of services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_hydroseed.svg" alt="Hydroseeding">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Hydroseeding and New Lawn Installation</h4>
+                            <p>Hydroseeding is a process in whcih seed and a combinations of fertilizer, biostimulants, moisture retention polymers, tactifiers and other additives are combined with water and a hydroseeding mulch to form a slurry. This slurry is sprayed onto the ground to establish vegetation and erosion control. It's a cost effective, more disease resistant and an overall healthier grass option than sod. Whether your lawn is completely dead or suffers from patchy areas, Mountain View Landscaping can help discuss how hydroseeding can be applied to get your lawn popping again!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-full">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 text-center service-image">
+                            <div class="single-image">
+                                <img src="img/rounded_irrigation.svg" alt="Irrigation system installation and maintenance">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12">
+                            <h4 class="service-title">Irrigation System Maintenance and Installation</h4>
+                            <p>Properly designed, installed, maintained and managed lawn and garden irrigation/sprinkler systems provide beautiful landscapes and optimize irrigation water usage. The irrigation team at Mountain View Landscaping works closely with customers to meet their unique needs through every step of the process. We offer design and installation as well as seasonal winterization and spring enables, inspections, adjustments and testing!</p>
                         </div>
                     </div>
                 </div>
