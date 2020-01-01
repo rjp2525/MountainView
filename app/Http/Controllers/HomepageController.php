@@ -30,6 +30,26 @@ class HomepageController extends Controller
     }
 
     /**
+     * Render the services page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function services()
+    {
+        return view('services');
+    }
+
+    /**
+     * Render the about page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function about()
+    {
+        return view('about');
+    }
+
+    /**
      * Process the contact form submission.
      *
      * @param  HomepageContactFormRequest $request

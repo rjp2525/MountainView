@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Mountain View Landscaping</title>
-    <meta name="description" content="Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.">
+    <meta name="description" content="Looking for landscaping services in the Rockinham, New Hampshire area? We offer full-service design and installation services for your residential and commercial properties.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -89,7 +89,7 @@
             </div>
         </div>
     </div>
-    <section id="about" name="about">
+    <section id="about" name="about" class="about">
         <div class="container about-section">
             <div class="row section-header">
                 <div class="col-12 text-center">
@@ -108,6 +108,15 @@
                             <p>Mountain View Landscaping proudly provides complete residential and commercial lawn and landscaping services to the southern New Hampshire seacoast area. We offer a wide variety of services including aeration, fertilization, lawn mowing, irrigation start-ups and blow-outs, seasonal spring and fall clean-ups, snow plowing, ice management, hardscape design &amp; installation, hydroseeding and more! We're a local New Hampshire landscaping contractor, so you can rest assured we truly understand the region and how our interesting weather patterns impact all aspects of landscape design, maintenance and installation.</p>
                             <p>Our customers are our first priority and we're committed to exceeding their expectations in everything that we do. Our customers are the foundation of our growth and we earn our reputation every day by providing them with a high quality, reliable, efficient and professional service.</p>
                         </div>
+                        <div class="col-12 social">
+                            <h5 class="title">Follow us on Facebook and Instagram!</h5>
+                            <a href="https://instagram.com/mtnviewlandscaping">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/MountainViewLandscapers">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,59 +130,48 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <p class="section-text">We understand our customers have specific needs to keep things in order. We can help!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fas fa-tractor service-icon"></span>
+                        <img src="img/rounded_mowing.svg" alt="Residential and commercial lawn care service" class="service-icon">
                         <h5 class="service-title">Lawn Maintenance</h5>
                         <p>We can keep your lawn looking great and healthy all season long! Our lawn residential and commercial maintenance service includes weekly mowing, trimming, edging and blowing.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fas fa-cut service-icon"></span>
+                        <img src="img/rounded_hedge_trimming.svg" alt="Shrub trimming and shaping service" class="service-icon">
                         <h5 class="service-title">Trimming &amp; Pruning</h5>
                         <p>Regular trimming and pruning helps to keep your shrubs healthy and looking beautiful. We can manage your trees and shrubs to ensure strong growth and beauty throughout the year.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fas fa-tree service-icon"></span>
+                        <img src="img/rounded_mulch.svg" alt="Mulch bed refreshing and installation" class="service-icon">
                         <h5 class="service-title">Mulch Installation</h5>
                         <p>Mulching is one of the best things you can do for your beds. It keeps them looking great while also decreasing evaporation by as much as 35%, which means your water usage will be far more efficient.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fab fa-canadian-maple-leaf service-icon"></span>
+                        <img src="img/rounded_leaf_removal.svg" alt="Seasonal leaf clean-up and removal" class="service-icon">
                         <h5 class="service-title">Seasonal Clean-ups</h5>
                         <p>Seasonal clean-ups can make a real difference in the overall appearance of your property and health of your lawn. We provide leaf and mulch bed clean ups as well as curbside leaf pickup.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fas fa-snowplow service-icon"></span>
+                        <img src="img/rounded_snow_removal.svg" alt="Snow plowing, sidewalk shoveling and ice management" class="service-icon">
                         <h5 class="service-title">Snow &amp; Ice</h5>
                         <p>We know New England can be pretty unpredictable, which is why we're always ready. We can keep your walkways, parking lots and driveways clear of snow and ice during the hectic winter months.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center spost">
+                <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                     <div class="service-post">
-                        <span class="fas fa-pencil-ruler service-icon"></span>
+                        <img src="img/rounded_design.svg" alt="Landscape design and installation" class="service-icon">
                         <h5 class="service-title">Design &amp; Install</h5>
                         <p>Turn your yard into the envy of the neighborhood with our custom design landscaping. Walkways, patios, retaining walls and water features will enhance the beauty of your outdoor living space.</p>
-                        <div class="spacer"></div>
                     </div>
                 </div>
             </div>
@@ -373,56 +371,6 @@
             <div class="row" id="app">
                 <div class="col-lg-9">
                     <contact-form></contact-form>
-                    <!--<div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group name">
-                                <input type="text" name="name" class="form-control" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group email">
-                                <input type="email" name="email" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group subject">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group number">
-                                <input type="text" name="phone" class="form-control" placeholder="Phone number">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group type">
-                                <select class="form-control" id="request-type" name="request-type">
-                                    <option value="" selected disabled>Please select a service...</option>
-                                    <option>Lawn Care (Mowing)</option>
-                                    <option>Fertilization</option>
-                                    <option>Irrigation</option>
-                                    <option>Seasonal Clean-up</option>
-                                    <option>Hydroseeding or sod installation</option>
-                                    <option>Snow Plowing</option>
-                                    <option>Dethatching and Aerating</option>
-                                    <option>Hardscapes and retaining walls</option>
-                                    <option value="">Tree and shrub trimming</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group message">
-                                <textarea class="form-control" name="message" placeholder="Enter any specific information about your request here"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="send-btn text-center">
-                                <button type="button" class="btn-md button-theme">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                 </div>
                 <div class="col-lg-3">
                     <div class="contact-info">
@@ -454,6 +402,13 @@
                 <div class="col-lg-6 col-md-12">&copy; 2020 Mountain View Landscaping LLC, All Rights Reserved.</div>
                 <div class="col-lg-6 col-md-12 links">
                     <a href="{{ route('static.privacy') }}">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="https://instagram.com/mtnviewlandscaping">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/MountainViewLandscapers">
+                        <i class="fab fa-facebook"></i>
+                    </a>
                 </div>
             </div>
         </div>

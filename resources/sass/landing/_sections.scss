@@ -30,15 +30,31 @@
     }
 }
 
+/** For icon fonts  */
 .service-icon {
     font-size: 42px;
     color: #6aaf08;
     display: block;
     margin: 30px 0;
 }
+
+/** For custom SVG icons */
+img.service-icon {
+    height: 80px;
+    width: auto;
+    //background-color: #6aaf08;
+    display: inline;
+    margin: 15px 0;
+    //filter: invert(62%) sepia(33%) saturate(3517%) hue-rotate(46deg) brightness(93%) contrast(94%);
+}
+
 .service-title {
     text-transform: capitalize;
+    font-size: 20px;
+    color: #3e3e3e;
+    font-weight: 700;
 }
+
 .call-to-action {
     padding: 20px 0;
     background: #6aaf08;
@@ -90,6 +106,7 @@
 @media (max-width: 991px) {
     .call-to-action .cta-text {
         float: none;
+        padding: 0 0 12px 0;
     }
 }
 .call-to-action .cta-button {
@@ -136,9 +153,11 @@ section {
     font-size: 16px;
 }
 
-.services,
+//.services + .contact
+.about,
+.work,
 .contact {
-    background: #eee;
+    background: #f2f2f2;
 
     .section-header {
         //margin-bottom: 20px;
@@ -166,16 +185,24 @@ section {
 }
 
 .service-post {
-    padding: 20px 20px;
-    margin: 0 auto 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-    @include transition(box-shadow 0.2s ease-in-out);
+    //padding: 20px 20px;
+    //margin: 0 auto 30px;
+    //border-radius: 5px;
+    //box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    //@include transition(box-shadow 0.2s ease-in-out);
 
-    &:hover,
-    &:focus,
-    &:active {
-        box-shadow: 0 0 35px rgba(106, 175, 8, 0.5);
+    //&:hover,
+    //&:focus,
+    //&:active {
+    //box-shadow: 0 0 35px rgba(106, 175, 8, 0.5);
+    //}
+    //
+    p {
+        margin: 0 0 10px;
+        color: #6e6e6e;
+        font-size: 15px;
+        line-height: 27px;
+        text-rendering: optimizeLegibility;
     }
 }
 
@@ -189,6 +216,21 @@ p.section-text {
     margin-bottom: 2rem;
     font-size: 20px;
     line-height: 1.5;
+}
+
+.about {
+    .social {
+        text-align: center;
+
+        i {
+            line-height: 40px;
+            font-size: 40px;
+
+            &.fa-instagram {
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 /** Work Section  */
@@ -390,6 +432,13 @@ h4.contact-heading {
         &:active {
             color: #fefefe;
         }
+
+        &:not(:last-child):after {
+            content: "|";
+            padding-left: 3px;
+            padding-right: 3px;
+            color: #a8a8a8;
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -399,5 +448,99 @@ h4.contact-heading {
             text-align: center;
             margin-top: 10px;
         }
+    }
+}
+
+/**
+ * Breadcrumbs header
+ */
+.page-header-breadcrumbs {
+    padding: 25px 0;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    //background-size: cover;
+    //background-image: url("img/page_header_breadcrumbs_bg.png");
+
+    h1 {
+        font-size: 22px;
+        line-height: 34px;
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .breadcrumbs {
+        line-height: 36px;
+        font-style: italic;
+
+        &,
+        a,
+        i {
+            color: #777;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        i {
+            font-size: 9px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        .current {
+            color: #6aaf08;
+        }
+
+        a {
+            @include transition(all 0.2s ease-in-out);
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #333;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .page-header-breadcrumbs {
+        h1,
+        .bcrumbs {
+            text-align: center !important;
+        }
+    }
+}
+
+.service-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-full {
+    padding-top: 50px;
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .service-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.about-us-page-image {
+    img {
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+        vertical-align: middle;
     }
 }

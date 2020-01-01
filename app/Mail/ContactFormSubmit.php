@@ -38,7 +38,7 @@ class ContactFormSubmit extends Mailable
     {
         return $this->from($this->data->email)
                     ->replyTo($this->data->email)
-                    ->subject('NEW CONTACT US: ' . $this->data->subject)
+                    ->subject('[CONTACT US] ' . $this->data->subject)
                     ->markdown('mail.contactus');
     }
 }

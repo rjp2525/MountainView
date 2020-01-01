@@ -1,8 +1,6 @@
 @component('mail::message')
 # New Message via Contact Form
 
-A new message was received via the contact form:
-
 <b>Name:</b> {{ $data->name }}
 
 <b>Email Address:</b> {{ $data->email }}
@@ -13,10 +11,4 @@ A new message was received via the contact form:
 
 <b>Message:</b> {{ $data->message }}
 
-
-@component('mail::button', ['url' => 'https://mountainviewlandscapers.com', 'color' => 'success'])
-View Message
-@endcomponent
-
-Mountain View Landscaping
 @endcomponent
