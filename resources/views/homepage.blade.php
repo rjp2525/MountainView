@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Mountain View Landscaping - Southern New Hampshire's Quality Landscaping and Lawn Care</title>
-    <meta name="description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial property.">
+    <meta name="description" content="Looking for landscaping services in the Rockingham, NH area? Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management. We offer full-service design, installation and maintenance services for your residential and commercial properties.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -18,14 +18,14 @@
     <!-- Social Media Sharing -->
     <meta property="og:site_name" content="Mountain View Landscaping, LLC">
     <meta property="og:title" content="Serving southern New Hampshire's Landscaping Needs">
-    <meta property="og:description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial properties.">
+    <meta property="og:description" content="Looking for landscaping services in the Rockingham, NH area? Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management. We offer full-service design, installation and maintenance services for your residential and commercial properties.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mountainviewlandscapers.com">
     <meta property="og:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="Mountain View Landscaping - Serving Southern New Hampshire's Landscaping and Lawn Care Needs">
-    <meta property="twitter:description" content="Looking for landscaping services in the Rockingham or Merrimack, New Hampshire area? We offer full-service design, installation and maintenance services for your residential and commercial properties.">
+    <meta property="twitter:description" content="Looking for landscaping services in the Rockingham, NH area? Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management. We offer full-service design, installation and maintenance services for your residential and commercial properties.">
     <meta property="twitter:url" content="https://mountainviewlandscapers.com">
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
@@ -108,6 +108,7 @@
                         <div class="col-md-10 col-sm-12">
                             <p>Mountain View Landscaping proudly provides complete residential and commercial lawn and landscaping services to the southern New Hampshire seacoast area. We offer a wide variety of services including aeration, fertilization, lawn mowing, irrigation start-ups and blow-outs, seasonal spring and fall clean-ups, snow plowing, ice management, hardscape design &amp; installation, hydroseeding and more! We're a local New Hampshire landscaping contractor, so you can rest assured we truly understand the region and how our interesting weather patterns impact all aspects of landscape design, maintenance and installation.</p>
                             <p>Our customers are our first priority and we're committed to exceeding their expectations in everything that we do. Our customers are the foundation of our growth and we earn our reputation every day by providing them with a high quality, reliable, efficient and professional service.</p>
+                            <p>We service the following southern New Hampshire towns: <em>Fremont, Raymond, Brentwood, Sandown, Danville, Epping, Chester, Atkinson, Plaistow, Hampstead, Kingston, Hooksett, Portsmouth, Newington, Stratham and Manchester.</em></p>
                         </div>
                         <div class="col-12 social">
                             <h5 class="title">Follow us on Facebook and Instagram!</h5>
