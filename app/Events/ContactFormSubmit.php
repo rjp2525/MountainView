@@ -33,12 +33,16 @@ class ContactFormSubmit
     }
 
     /**
-     * Get the channels the event should broadcast on.
+     * Get the channels that the event should broadcast on.
+     *
+     * TODO: Broadcast this event onto a private channel to use with Laravel Echo
+     *       so that administrators can receeive live updates when people submit
+     *       a contact form request.
      *
      * @return \Illuminate\Broadcasting\Channel|array
      */
-    public function broadcastOn()
+    /**public function broadcastOn()
     {
         return [];
-    }
+    }**/
 }
