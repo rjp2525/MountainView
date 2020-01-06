@@ -108,7 +108,7 @@
                         <div class="col-md-10 col-sm-12">
                             <p>Mountain View Landscaping proudly provides complete residential and commercial lawn and landscaping services to the southern New Hampshire seacoast area. We offer a wide variety of services including aeration, fertilization, lawn mowing, irrigation start-ups and blow-outs, seasonal spring and fall clean-ups, snow plowing, ice management, hardscape design &amp; installation, hydroseeding and more! We're a local New Hampshire landscaping contractor, so you can rest assured we truly understand the region and how our interesting weather patterns impact all aspects of landscape design, maintenance and installation.</p>
                             <p>Our customers are our first priority and we're committed to exceeding their expectations in everything that we do. Our customers are the foundation of our growth and we earn our reputation every day by providing them with a high quality, reliable, efficient and professional service.</p>
-                            <p>We service the following southern New Hampshire towns: <em>Fremont, Raymond, Brentwood, Sandown, Danville, Epping, Chester, Atkinson, Plaistow, Hampstead, Kingston, Hooksett, Portsmouth, Newington, Stratham and Manchester.</em></p>
+                            <p>We service the following southern New Hampshire towns: <em>Fremont, Raymond, Brentwood, Sandown, Danville, Epping, Chester, Hampstead, Kingston, Hooksett, Portsmouth, Newington, Stratham and Manchester.</em></p>
                         </div>
                         <div class="col-12 social">
                             <h5 class="title">Follow us on Facebook and Instagram!</h5>
