@@ -14,6 +14,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return 'This is the client portal index page.';
+        return view('home');
     }
 }

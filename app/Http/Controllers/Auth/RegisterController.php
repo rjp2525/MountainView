@@ -26,9 +26,12 @@ class RegisterController extends Controller
     /**
      * Where to redirect users after registration.
      *
+     * This is forced by the trait, automatically logs the user in and redirects.
+     * They should be seeing an email verification page.
+     *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/portal';
 
     /**
      * Create a new controller instance.
@@ -49,9 +52,15 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'phone:US'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'street' => ['required', 'string'],
+            'state' => ['required', 'string', 'max:2'],
+            'city' => ['required', 'string'],
+            'zip' => ['required', 'postal_code:US']
         ]);
     }
 
@@ -63,10 +72,29 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        $user = User::create([
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'primary_phone' => $data['phone'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $address = $user->addresses()->create([
+            'label' => 'Default Address',
+            'given_name' => $data['first_name'],
+            'family_name' => $data['last_name'],
+            'organization' => (empty($data['company']) ? '' : $data['company']),
+            'country_code' => 'US',
+            'street' => $data['street'],
+            'state' => $data['state'],
+            'city' => $data['city'],
+            'postal_code' => $data['zip'],
+            'is_primary' => true,
+            'is_billing' => true,
+            'is_shipping' => true,
+        ]);
+
+        return User::where('email' , $user->email)->first();
     }
 }

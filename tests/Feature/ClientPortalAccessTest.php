@@ -15,15 +15,19 @@ class ClientPortalAccessTest extends TestCase
      */
     public function testAccessToPortalRequiresUrlParameter()
     {
-        $response = $this->get('/portal');
+        //$response = $this->get('/portal');
 
-        $response->assertStatus(404);
+        //$response->assertStatus(404);
 
         // Use the ?dev URL parameter
         $res = $this->get('/portal?dev');
 
-        $res->assertStatus(200);
+        $res->assertStatus(302);
 
-        $res->assertSee('This is the client portal index page.');
+        $res->assertRedirect('/login');
+
+        //$res->assertStatus(200);
+
+        //$res->assertSee('This is the client portal index page.');
     }
 }

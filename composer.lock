@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7292b1eb5bfb7a4655c24c5c8b157bfe",
+    "content-hash": "1f30fb5a4263e1044731a0c8ae459605",
     "packages": [
+        {
+            "name": "axlon/laravel-postal-code-validation",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/axlon/laravel-postal-code-validation.git",
+                "reference": "1588cbe32c0882472567aa0abb0fffd39cc4c231"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/axlon/laravel-postal-code-validation/zipball/1588cbe32c0882472567aa0abb0fffd39cc4c231",
+                "reference": "1588cbe32c0882472567aa0abb0fffd39cc4c231",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.1 || ^6.0",
+                "illuminate/http": "^5.1 || ^6.0",
+                "illuminate/support": "^5.1 || ^6.0",
+                "illuminate/validation": "^5.1 || ^6.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3",
+                "illuminate/filesystem": "^5.1 || ^6.0",
+                "illuminate/translation": "^5.1 || ^6.0",
+                "ocramius/package-versions": "^1.4",
+                "phpunit/phpunit": "^5.2 || ^6.0 || ^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\Axlon\\PostalCodeValidation\\ValidationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axlon\\PostalCodeValidation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Choraimy Kroonstuiver",
+                    "email": "choraimy@live.nl"
+                }
+            ],
+            "description": "Worldwide postal code validation for Laravel",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "post code",
+                "postal code",
+                "validation",
+                "zip code"
+            ],
+            "time": "2019-09-07T19:26:20+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",
@@ -224,16 +287,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -277,53 +340,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
-        },
-        {
-            "name": "erusev/parsedown",
-            "version": "1.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/erusev/parsedown.git",
-                "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
-                "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Parsedown": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Emanuil Rusev",
-                    "email": "hello@erusev.com",
-                    "homepage": "http://erusev.com"
-                }
-            ],
-            "description": "Parser for Markdown.",
-            "homepage": "http://parsedown.org",
-            "keywords": [
-                "markdown",
-                "parser"
-            ],
-            "time": "2019-03-17T18:48:37+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -497,6 +514,55 @@
             "time": "2019-10-09T18:53:14+00:00"
         },
         {
+            "name": "jackpopp/geodistance",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackpopp/geodistance.git",
+                "reference": "cc8d47911e135528898676060d5235571186b946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackpopp/geodistance/zipball/cc8d47911e135528898676060d5235571186b946",
+                "reference": "cc8d47911e135528898676060d5235571186b946",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "*"
+            },
+            "require-dev": {
+                "illuminate/database": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jackpopp\\GeoDistance\\": "src/Jackpopp/GeoDistance"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Hannigan Popp",
+                    "email": "jack@jackpopp.com"
+                }
+            ],
+            "description": "Search for locations within a radius using latitude and longitude values with your eloquent models.",
+            "keywords": [
+                "distance",
+                "kilometers",
+                "latitude",
+                "longitude",
+                "miles",
+                "radius",
+                "search",
+                "searching"
+            ],
+            "time": "2015-07-07T10:58:38+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -586,26 +652,27 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.9.0",
+            "version": "v6.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "60610be97ca389fa4b959d4d13fb3690970d9fb7"
+                "reference": "fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/60610be97ca389fa4b959d4d13fb3690970d9fb7",
-                "reference": "60610be97ca389fa4b959d4d13fb3690970d9fb7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14",
+                "reference": "fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
                 "dragonmantank/cron-expression": "^2.0",
                 "egulias/email-validator": "^2.1.10",
-                "erusev/parsedown": "^1.7",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
+                "league/commonmark": "^1.1",
+                "league/commonmark-ext-table": "^2.1",
                 "league/flysystem": "^1.0.8",
                 "monolog/monolog": "^1.12|^2.0",
                 "nesbot/carbon": "^2.0",
@@ -665,14 +732,13 @@
                 "filp/whoops": "^2.4",
                 "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-cached-adapter": "^1.0",
-                "mockery/mockery": "^1.2.3",
+                "mockery/mockery": "^1.3.1",
                 "moontoast/math": "^1.1",
                 "orchestra/testbench-core": "^4.0",
                 "pda/pheanstalk": "^4.0",
-                "phpunit/phpunit": "^8.3",
+                "phpunit/phpunit": "^8.4|^9.0",
                 "predis/predis": "^1.1.1",
-                "symfony/cache": "^4.3",
-                "true/punycode": "^2.1"
+                "symfony/cache": "^4.3.4"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.0).",
@@ -690,6 +756,7 @@
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
                 "moontoast/math": "Required to use ordered UUIDs (^1.1).",
+                "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0).",
@@ -728,7 +795,60 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-12-19T18:16:22+00:00"
+            "time": "2020-01-08T21:17:42+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "b8eae9ddd461e89d0296f74fd069c413bf83b6fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/b8eae9ddd461e89d0296f74fd069c413bf83b6fa",
+                "reference": "b8eae9ddd461e89d0296f74fd069c413bf83b6fa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "time": "2019-07-30T15:25:31+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -794,17 +914,153 @@
             "time": "2019-08-07T15:10:45+00:00"
         },
         {
-            "name": "league/flysystem",
-            "version": "1.0.62",
+            "name": "league/commonmark",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0"
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "2533c389fd2a7573d4f7be279b1c33cf941c8dfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2533c389fd2a7573d4f7be279b1c33cf941c8dfc",
+                "reference": "2533c389fd2a7573d4f7be279b1c33cf941c8dfc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1"
+            },
+            "replace": {
+                "colinodell/commonmark-php": "*"
+            },
+            "require-dev": {
+                "cebe/markdown": "~1.0",
+                "commonmark/commonmark.js": "0.29.1",
+                "erusev/parsedown": "~1.0",
+                "ext-json": "*",
+                "michelf/php-markdown": "~1.4",
+                "mikehaertl/php-shellcommand": "^1.4",
+                "phpstan/phpstan-shim": "^0.11.5",
+                "phpunit/phpunit": "^7.5",
+                "scrutinizer/ocular": "^1.5",
+                "symfony/finder": "^4.2"
+            },
+            "suggest": {
+                "league/commonmark-extras": "Library of useful extensions including smart punctuation"
+            },
+            "bin": [
+                "bin/commonmark"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "PHP Markdown parser based on the CommonMark spec",
+            "homepage": "https://commonmark.thephpleague.com",
+            "keywords": [
+                "commonmark",
+                "markdown",
+                "parser"
+            ],
+            "time": "2020-01-09T22:41:09+00:00"
+        },
+        {
+            "name": "league/commonmark-ext-table",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark-ext-table.git",
+                "reference": "3228888ea69636e855efcf6636ff8e6316933fe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark-ext-table/zipball/3228888ea69636e855efcf6636ff8e6316933fe7",
+                "reference": "3228888ea69636e855efcf6636ff8e6316933fe7",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "~0.19.3|^1.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "phpstan/phpstan": "~0.11",
+                "phpunit/phpunit": "^7.0|^8.0",
+                "symfony/var-dumper": "^4.0",
+                "vimeo/psalm": "^3.0"
+            },
+            "type": "commonmark-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\Ext\\Table\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Hasoň",
+                    "email": "martin.hason@gmail.com"
+                },
+                {
+                    "name": "Webuni s.r.o.",
+                    "homepage": "https://www.webuni.cz"
+                },
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com"
+                }
+            ],
+            "description": "Table extension for league/commonmark",
+            "homepage": "https://github.com/thephpleague/commonmark-ext-table",
+            "keywords": [
+                "commonmark",
+                "extension",
+                "markdown",
+                "table"
+            ],
+            "time": "2019-09-26T13:28:33+00:00"
+        },
+        {
+            "name": "league/flysystem",
+            "version": "1.0.63",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "shasum": ""
             },
             "require": {
@@ -875,7 +1131,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-29T14:46:55+00:00"
+            "time": "2020-01-04T16:30:31+00:00"
         },
         {
             "name": "league/iso3166",
@@ -1660,6 +1916,390 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "rinvex/countries",
+            "version": "v6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rinvex/countries.git",
+                "reference": "3391e454402f1e3f103cba6d037afa343435315f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rinvex/countries/zipball/3391e454402f1e3f103cba6d037afa343435315f",
+                "reference": "3391e454402f1e3f103cba6d037afa343435315f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.0",
+                "laravel/helpers": "^1.1.0",
+                "phpunit/phpunit": "^8.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rinvex\\Country\\Providers\\CountryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Rinvex\\Country\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rinvex LLC",
+                    "email": "help@rinvex.com",
+                    "homepage": "https://rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "email": "me@omranic.com",
+                    "homepage": "https://omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous PHP Community",
+                    "homepage": "https://github.com/rinvex/countries/contributors"
+                }
+            ],
+            "description": "Rinvex Countries is a simple and lightweight package for retrieving country details with flexibility. A whole bunch of data including name, demonym, capital, iso codes, dialling codes, geo data, currencies, flags, emoji, and other attributes for all 250 countries worldwide at your fingertips.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "Flexible",
+                "Simple",
+                "countries",
+                "country",
+                "currencies",
+                "demonym",
+                "dialling",
+                "emoji",
+                "flags",
+                "geographic",
+                "languages",
+                "rinvex",
+                "svg"
+            ],
+            "time": "2019-09-23T21:43:00+00:00"
+        },
+        {
+            "name": "rinvex/laravel-addresses",
+            "version": "dev-mtv-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rjp2525/laravel-addresses.git",
+                "reference": "f70e421dc58e5088fb2510357eebd3a3077da9f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rjp2525/laravel-addresses/zipball/f70e421dc58e5088fb2510357eebd3a3077da9f7",
+                "reference": "f70e421dc58e5088fb2510357eebd3a3077da9f7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0.0",
+                "illuminate/database": "^6.0.0",
+                "illuminate/support": "^6.0.0",
+                "jackpopp/geodistance": "^1.2.0",
+                "php": "^7.2.0",
+                "rinvex/countries": "^6.0.0",
+                "rinvex/laravel-cacheable": "^3.0.0",
+                "rinvex/laravel-support": "^3.0.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.0",
+                "illuminate/container": "^6.0.0",
+                "phpunit/phpunit": "^8.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rinvex\\Addresses\\Providers\\AddressesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "database"
+                ],
+                "psr-4": {
+                    "Rinvex\\Addresses\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Rinvex\\Addresses\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rinvex LLC",
+                    "homepage": "https://rinvex.com",
+                    "email": "help@rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "homepage": "https://omranic.com",
+                    "email": "me@omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous Laravel Community",
+                    "homepage": "https://github.com/rinvex/laravel-addresses/contributors"
+                }
+            ],
+            "description": "Rinvex Addresses is a polymorphic Laravel package, for addressbook management. You can add addresses to any eloquent model with ease.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "address",
+                "addressable",
+                "billing",
+                "city",
+                "country",
+                "eloquent",
+                "laravel",
+                "latitude",
+                "longitude",
+                "model",
+                "polymorphic",
+                "postal",
+                "primary",
+                "rinvex",
+                "shipping",
+                "state",
+                "street"
+            ],
+            "support": {
+                "email": "help@rinvex.com",
+                "issues": "https://github.com/rinvex/laravel-addresses/issues",
+                "source": "https://github.com/rinvex/laravel-addresses",
+                "docs": "https://github.com/rinvex/laravel-addresses/blob/master/README.md"
+            },
+            "time": "2020-01-10T19:19:59+00:00"
+        },
+        {
+            "name": "rinvex/laravel-cacheable",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rinvex/laravel-cacheable.git",
+                "reference": "8689dd6753a73c22ace53983c32eb5df4c0a389c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rinvex/laravel-cacheable/zipball/8689dd6753a73c22ace53983c32eb5df4c0a389c",
+                "reference": "8689dd6753a73c22ace53983c32eb5df4c0a389c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^6.0.0",
+                "illuminate/contracts": "^6.0.0",
+                "illuminate/database": "^6.0.0",
+                "php": "^7.2.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.0",
+                "illuminate/container": "^6.0.0",
+                "phpunit/phpunit": "^8.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rinvex\\Cacheable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rinvex LLC",
+                    "email": "help@rinvex.com",
+                    "homepage": "https://rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "email": "me@omranic.com",
+                    "homepage": "https://omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous Laravel Community",
+                    "homepage": "https://github.com/rinvex/laravel-cacheable/contributors"
+                }
+            ],
+            "description": "Rinvex Cacheable is a granular, intuitive, and fluent caching system for eloquent models. Simple, but yet powerful, plug-n-play with no hassle.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "cache",
+                "cacheable",
+                "eloquent",
+                "fluent",
+                "granular",
+                "intuitive",
+                "laravel",
+                "model",
+                "query",
+                "rinvex",
+                "trait"
+            ],
+            "time": "2019-09-22T21:13:42+00:00"
+        },
+        {
+            "name": "rinvex/laravel-support",
+            "version": "v3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rinvex/laravel-support.git",
+                "reference": "8355943799946842429c309049987cd866b7a8b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rinvex/laravel-support/zipball/8355943799946842429c309049987cd866b7a8b0",
+                "reference": "8355943799946842429c309049987cd866b7a8b0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^6.0.0",
+                "illuminate/bus": "^6.0.0",
+                "illuminate/contracts": "^6.0.0",
+                "illuminate/http": "^6.0.0",
+                "illuminate/routing": "^6.0.0",
+                "illuminate/support": "^6.0.0",
+                "illuminate/validation": "^6.0.0",
+                "laravel/helpers": "^1.1.0",
+                "php": "^7.2.0",
+                "spatie/laravel-schemaless-attributes": "^1.6.0",
+                "watson/validating": "^3.3.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.0",
+                "phpunit/phpunit": "^8.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Rinvex\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rinvex LLC",
+                    "email": "help@rinvex.com",
+                    "homepage": "https://rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "email": "me@omranic.com",
+                    "homepage": "https://omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous Laravel Community",
+                    "homepage": "https://github.com/rinvex/laravel-support/contributors"
+                }
+            ],
+            "description": "Rinvex common support helpers, contracts, and traits required by various Rinvex packages. Validator functionality, and basic controller included out-of-the-box.",
+            "homepage": "https://rinvex.com/marketplace/rinvex-support/",
+            "keywords": [
+                "contract",
+                "helper",
+                "laravel",
+                "mimetype",
+                "rinvex",
+                "support",
+                "timezones",
+                "trait",
+                "validator"
+            ],
+            "time": "2019-12-18T09:02:37+00:00"
+        },
+        {
+            "name": "spatie/laravel-schemaless-attributes",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-schemaless-attributes.git",
+                "reference": "7bd66feab0bc5289c089c8c53201a929781797dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-schemaless-attributes/zipball/7bd66feab0bc5289c089c8c53201a929781797dc",
+                "reference": "7bd66feab0bc5289c089c8c53201a929781797dc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.6|^6.0",
+                "illuminate/support": "^5.6|^6.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "orchestra/testbench": "^3.6|^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\SchemalessAttributes\\SchemalessAttributesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\SchemalessAttributes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add schemaless attributes to Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-schemaless-attributes",
+            "keywords": [
+                "laravel-schemaless-attributes",
+                "spatie"
+            ],
+            "time": "2019-09-04T07:08:44+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3196,6 +3836,56 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "watson/validating",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/validating.git",
+                "reference": "288eb177e9b3721e8e1f2dad81d4f17928a3c916"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/validating/zipball/288eb177e9b3721e8e1f2dad81d4f17928a3c916",
+                "reference": "288eb177e9b3721e8e1f2dad81d4f17928a3c916",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": ">= 5.4.0",
+                "illuminate/database": ">= 5.4.0",
+                "illuminate/events": ">= 5.4.0",
+                "illuminate/support": ">= 5.4.0",
+                "illuminate/validation": ">= 5.4.0",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Validating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Eloquent model validating trait.",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "validation"
+            ],
+            "time": "2019-09-05T20:06:01+00:00"
         }
     ],
     "packages-dev": [
@@ -3311,16 +4001,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33"
+                "reference": "c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5",
+                "reference": "c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5",
                 "shasum": ""
             },
             "require": {
@@ -3378,7 +4068,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2019-11-27T11:17:18+00:00"
+            "time": "2020-01-06T09:32:42+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -3582,6 +4272,63 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "0287d4eee80aad718bdf7f90117cfe720c493064"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/0287d4eee80aad718bdf7f90117cfe720c493064",
+                "reference": "0287d4eee80aad718bdf7f90117cfe720c493064",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.8|^6.0",
+                "illuminate/filesystem": "~5.8|^6.0",
+                "illuminate/support": "~5.8|^6.0",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "time": "2019-12-20T15:09:01+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -4330,16 +5077,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2"
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
                 "shasum": ""
             },
             "require": {
@@ -4409,7 +5156,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-25T14:49:39+00:00"
+            "time": "2020-01-08T08:49:49+00:00"
         },
         {
             "name": "scrivo/highlight.php",
@@ -5185,7 +5932,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "rinvex/laravel-addresses": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
