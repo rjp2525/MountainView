@@ -544,3 +544,27 @@ h4.contact-heading {
         vertical-align: middle;
     }
 }
+
+// Authentication forms
+.auth-breadcrumbs {
+    background: #f7f8f9;
+    border-bottom: 2px solid #ddd;
+}
+.auth-form {
+    background: #f7f8f9;
+
+    .card {
+        background: #fff;
+        box-shadow: 0 10px 25px 0 rgba(50, 50, 93, 0.07),
+            0 5px 15px 0 rgba(0, 0, 0, 0.07);
+        border-radius: 0.25rem;
+    }
+
+    .card-header-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: rgba(55, 77, 103, 0.7) !important;
+        margin-bottom: 1rem;
+    }
+}

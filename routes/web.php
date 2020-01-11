@@ -18,6 +18,7 @@ Route::get('privacy', ['as' => 'static.privacy', 'uses' => 'HomepageController@p
 Route::post('contact', ['as' => 'static.contact.submit', 'uses' => 'HomepageController@contact']);
 
 Auth::routes(['verify' => true]);
+Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 Route::group(['middleware' => ['auth', 'verified', 'beta.cookie'], 'prefix' => 'portal', 'namespace' => 'Client'], function() {
     Route::get('/', ['as' => 'portal.index', 'uses' => 'IndexController@index']);

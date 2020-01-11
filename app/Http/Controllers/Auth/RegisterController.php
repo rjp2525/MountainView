@@ -60,7 +60,9 @@ class RegisterController extends Controller
             'street' => ['required', 'string'],
             'state' => ['required', 'string', 'max:2'],
             'city' => ['required', 'string'],
-            'zip' => ['required', 'postal_code:US']
+            'zip' => ['required', 'postal_code:US'],
+            'terms_of_service' => ['accepted'],
+            'privacy_policy' => ['accepted']
         ]);
     }
 

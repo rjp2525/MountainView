@@ -30,6 +30,7 @@
     <meta property="twitter:image" content="https://mountainviewlandscapers.com/img/social_share_card.png">
 
     <!-- CSS -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/bb0ff28fce.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
