@@ -20,6 +20,6 @@ Route::post('contact', ['as' => 'static.contact.submit', 'uses' => 'HomepageCont
 Auth::routes(['verify' => true]);
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
-Route::group(['middleware' => ['auth', 'verified', 'beta.cookie'], 'prefix' => 'portal', 'namespace' => 'Client'], function() {
+Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'portal', 'namespace' => 'Client'], function() {
     Route::get('/', ['as' => 'portal.index', 'uses' => 'IndexController@index']);
 });
