@@ -292,7 +292,9 @@ class AuthenticationTest extends TestCase
 
         $res_verified->assertStatus(200);
 
-        $res_verified->assertSee('Home');
+        // TODO: Uncomment this line when there is enough progress made on the
+        // customer portal/dashboard to assert this content exists.
+        //$res_verified->assertSee('Dashboard');
     }
 
     public function testPasswordRequiredToContinuePageIsDisplayed()
@@ -328,6 +330,6 @@ class AuthenticationTest extends TestCase
 
         $res->assertStatus(302);
 
-        $res->assertRedirect('/home');
+        $res->assertRedirect('/portal');
     }
 }
