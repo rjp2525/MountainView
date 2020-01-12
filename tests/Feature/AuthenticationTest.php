@@ -302,6 +302,14 @@ class AuthenticationTest extends TestCase
         $this->assertTrue(true);
     }
 
+    public function testUnauthenticatedUsersAreRedirectedToLogin()
+    {
+        $res = $this->get('/portal');
+
+        $res->assertStatus(302);
+        $res->assertRedirect('/login');
+    }
+
     public function testItRedirectsYouToHomeIfLoggedIn()
     {
         $this->valid_account_registration_data['password'] = Hash::make('Password123');
