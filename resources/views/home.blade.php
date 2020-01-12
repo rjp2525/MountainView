@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.portal')
 
 @section('content')
 <div class="container">

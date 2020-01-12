@@ -218,6 +218,11 @@ class AuthenticationTest extends TestCase
         //$new_response->assertSee('Verify Your Email Address');
     }
 
+    /**
+     * Ensure that a login will fail if invalid credentials are provided.
+     *
+     * @return boolean
+     */
     public function testLoginFailsOnInvalidCredentials()
     {
         $this->valid_account_registration_data['password'] = Hash::make('Password123');
