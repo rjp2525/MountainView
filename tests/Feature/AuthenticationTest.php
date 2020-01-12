@@ -6,6 +6,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * Authentication Testing
@@ -218,9 +220,12 @@ class AuthenticationTest extends TestCase
 
     public function testLoginFailsOnInvalidCredentials()
     {
+        $this->valid_account_registration_data['password'] = Hash::make('Password123');
         $user = User::create($this->valid_account_registration_data);
         $user->email_verified_at = \Carbon\Carbon::now();
         $user->save();
+
+        $this->assertDatabaseHas('users', ['email' => 'example@example.com']);
 
         $bad_credentials = [
             'email' => 'bad@bad.com',
@@ -234,25 +239,17 @@ class AuthenticationTest extends TestCase
         /**
          * {"errors":{"email":["These credentials do not match our records."]},"message":"The given data was invalid."}
          */
-        //$bad_res->assertExactJson([
-        //    'errors' => ['email' => ['These credentials do not match our records.'],
-        //    'message' => 'The given data was invalid.'
-        //]]);
 
-        $success_res = $this->json('POST', '/login', ['email' => 'example@example.com', 'password' => 'Password123']);
+        $good_creds = [
+            'email' => 'example@example.com',
+            'password' => 'Password123'
+        ];
 
-        //$success_res->assertExactJson(['error' => true]);
-        // TODO: fix this, should be a 302 redirect to /portal but an invalid
-        // credentials error is occurring. Need to double check the database.
-        $success_res->assertStatus(422);
+        $success_res = $this->json('POST', '/login', $good_creds);
 
-        //$success_res->assertRedirect('/portal');
-    }
+        $success_res->assertStatus(302);
 
-    public function testLoginFormRedirectsSuccessfullyOnValidCredentials()
-    {
-        //
-        $this->assertTrue(true);
+        $success_res->assertRedirect('/portal');
     }
 
     public function testPasswordResetFailsOnInvalidEmailAddress()
@@ -270,7 +267,27 @@ class AuthenticationTest extends TestCase
     public function testEmailVerificationRequiredBeforeAccessingPortal()
     {
         // Middleware testing
-        $this->assertTrue(true);
+        $this->valid_account_registration_data['password'] = Hash::make('Password123');
+        $user = User::create($this->valid_account_registration_data);
+
+        $this->assertDatabaseHas('users', ['email' => 'example@example.com']);
+
+        //$logged_in = Auth::loginUsingId($user->id);
+
+        $res = $this->actingAs($user)->get('/portal');
+
+        $res->assertStatus(302);
+
+        $res->assertRedirect('/email/verify');
+
+        $user->email_verified_at = \Carbon\Carbon::now();
+        $user->save();
+
+        $res_verified = $this->actingAs($user)->get('/portal?dev');
+
+        $res_verified->assertStatus(200);
+
+        $res_verified->assertSee('Home');
     }
 
     public function testPasswordRequiredToContinuePageIsDisplayed()
@@ -283,5 +300,21 @@ class AuthenticationTest extends TestCase
     {
         //
         $this->assertTrue(true);
+    }
+
+    public function testItRedirectsYouToHomeIfLoggedIn()
+    {
+        $this->valid_account_registration_data['password'] = Hash::make('Password123');
+        $user = User::create($this->valid_account_registration_data);
+        $user->email_verified_at = \Carbon\Carbon::now();
+        $user->save();
+
+        $this->assertDatabaseHas('users', ['email' => 'example@example.com']);
+
+        $res = $this->actingAs($user)->get('/login');
+
+        $res->assertStatus(302);
+
+        $res->assertRedirect('/home');
     }
 }
