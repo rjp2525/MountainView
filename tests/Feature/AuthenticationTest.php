@@ -283,7 +283,7 @@ class AuthenticationTest extends TestCase
         $user->email_verified_at = \Carbon\Carbon::now();
         $user->save();
 
-        $res_verified = $this->actingAs($user)->get('/portal?dev');
+        $res_verified = $this->actingAs($user)->get('/portal');
 
         $res_verified->assertStatus(200);
 
