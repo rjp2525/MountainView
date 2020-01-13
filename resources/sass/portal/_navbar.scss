@@ -57,6 +57,7 @@
     white-space: nowrap;
     font-family: "Nexa Rust Sans", sans-serif;
     font-size: 18px;
+    color: $white;
 
     @include hover-focus() {
         text-decoration: none;
@@ -75,8 +76,14 @@
     list-style: none;
 
     .nav-link {
-        padding-right: 0;
-        padding-left: 0;
+        //padding-right: 0;
+        //padding-left: 0;
+        padding: 20px 17px 19px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-family: Nunito Sans, sans-serif;
     }
 
     .dropdown-menu {
@@ -279,7 +286,9 @@
 
     .navbar-nav {
         .nav-link {
-            color: $navbar-dark-color;
+            // TODO: changeme
+            color: #999;
+            //color: $navbar-dark-color;
 
             @include hover-focus() {
                 color: $navbar-dark-hover-color;

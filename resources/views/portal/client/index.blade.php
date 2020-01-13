@@ -3,10 +3,10 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="alert alert-danger" role="alert">
+<div class="alert alert-danger" role="alert">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <strong>Payment Due:</strong> Your account balance is more than 14 days past due. Please make a payment to avoid service interruption.
             </div>
         </div>
