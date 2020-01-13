@@ -1,0 +1,12 @@
+// Nexa Rust Sans (Logo Font)
+@font-face {
+    font-family: "Nexa Rust Sans";
+    src: url("../fonts/NexaRustSans-Black.eot");
+    src: url("../fonts/NexaRustSans-Black.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/NexaRustSans-Black.woff2") format("woff2"),
+        url("../fonts/NexaRustSans-Black.woff") format("woff"),
+        url("../fonts/NexaRustSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
