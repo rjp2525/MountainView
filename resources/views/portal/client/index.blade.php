@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger no-border-radius text-center" role="alert">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
