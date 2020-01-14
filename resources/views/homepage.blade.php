@@ -31,7 +31,7 @@
 
     <!-- CSS -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/bb0ff28fce.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/bb0ff28fce.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/homepage.css') }}">

@@ -16,6 +16,10 @@
 
     <meta name="robots" content="noindex">
 
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <script async src="https://kit.fontawesome.com/bb0ff28fce.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ mix('css/portal.css') }}">
 </head>
 <body>
