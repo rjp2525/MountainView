@@ -23,3 +23,8 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'portal', 'namespace' => 'Client'], function() {
     Route::get('/', ['as' => 'portal.index', 'uses' => 'IndexController@index']);
 });
+
+Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'portal/api', 'namespace' => 'Api'], function() {
+    Route::get('address', 'AddressController@index');
+    Route::post('address/create', 'AddressController@store');
+});

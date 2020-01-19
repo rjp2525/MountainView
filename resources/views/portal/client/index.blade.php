@@ -174,10 +174,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <div class="card">
+            <address-list-widget></address-list-widget>
+            <!--<div class="card">
                 <div class="card-header card-header-large d-flex list-group-align-items-center">
                     <h4 class="card-header-title flex">My Addresses</h4>
-                    <a href="" class="">
+                    <a href="#" @click.prevent="" data-toggle="modal" data-target="#create-new-address-modal">
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
@@ -214,7 +215,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
+
         </div>
     </div>
 </div>
