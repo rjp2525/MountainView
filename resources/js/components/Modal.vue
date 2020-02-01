@@ -11,7 +11,7 @@
                 <div class="modal-body">
                     <slot></slot>
                 </div>
-                <div class="modal-footer">
+                <div v-if="usefooter" class="modal-footer">
                     <button v-if="form" type="submit" class="btn btn-primary" :form="form">
                         Save changes
                     </button>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    props: ["id", "form", "name"],
+    props: ["id", "form", "name", "usefooter"],
     //{
     //showModal: {
     //    type: Boolean,

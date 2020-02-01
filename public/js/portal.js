@@ -1990,7 +1990,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["id", "form", "name"] //{
+  props: ["id", "form", "name", "usefooter"] //{
   //showModal: {
   //    type: Boolean,
   //    default: false,
@@ -2013,34 +2013,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Modal_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Modal.vue */ "./resources/js/components/Modal.vue");
 /* harmony import */ var _forms_CreateNewAddressForm_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../forms/CreateNewAddressForm.vue */ "./resources/js/components/forms/CreateNewAddressForm.vue");
 /* harmony import */ var _mixins_collection_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../mixins/collection.js */ "./resources/js/mixins/collection.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -37816,31 +37788,33 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [_vm._t("default")], 2),
             _vm._v(" "),
-            _c("div", { staticClass: "modal-footer" }, [
-              _vm.form
-                ? _c(
+            _vm.usefooter
+              ? _c("div", { staticClass: "modal-footer" }, [
+                  _vm.form
+                    ? _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary",
+                          attrs: { type: "submit", form: _vm.form }
+                        },
+                        [
+                          _vm._v(
+                            "\n                    Save changes\n                "
+                          )
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
                     "button",
                     {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "submit", form: _vm.form }
+                      staticClass: "btn btn-secondary",
+                      attrs: { type: "button", "data-dismiss": "modal" }
                     },
-                    [
-                      _vm._v(
-                        "\n                    Save changes\n                "
-                      )
-                    ]
+                    [_vm._v("Close")]
                   )
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-secondary",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [_vm._v("Close")]
-              )
-            ])
+                ])
+              : _vm._e()
           ])
         ]
       )
@@ -37897,7 +37871,8 @@ var render = function() {
           attrs: {
             id: "create-new-address-modal",
             name: "Add Address",
-            form: "add-new-address=form"
+            form: "add-new-address=form",
+            usefooter: "true"
           }
         },
         [_c("create-address-form", { on: { created: _vm.updateAddressList } })],
@@ -38002,7 +37977,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "icon-view" }, [
       _c("a", { staticClass: "btn btn-success btn-sm", attrs: { href: "#" } }, [
-        _vm._v("\n                    View or Edit\n                ")
+        _vm._v("\n                    View\n                ")
       ])
     ])
   }

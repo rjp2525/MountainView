@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <modal id="create-new-address-modal" name="Add Address" form="add-new-address=form">
+        <modal id="create-new-address-modal" name="Add Address" form="add-new-address=form" usefooter="true">
             <create-address-form @created="updateAddressList"></create-address-form>
         </modal>
 
@@ -27,46 +27,18 @@
                     <span class="badge badge-light">Billing</span>
                 </div>
                 <div class="icon-view">
+                    <!--<a href="#" class="btn btn-warning btn-sm">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash"></i>
+                    </a>-->
                     <a href="#" class="btn btn-success btn-sm">
-                        View or Edit
+                        View
                     </a>
                 </div>
             </div>
         </div>
-
-        <!--<div class="list-group list-group-flush list-group-align-items-center">
-            <div href="#" class="list-group-item list-group-item-action d-flex">
-                <div class="list-group-title">
-                    <div class="flex">
-                        <strong>2 Main Street</strong>
-                    </div>
-                    <small class="text-muted d-sm-none d-md-block">Fremont, NH 03044</small>
-                </div>
-                <div class="d-sm-none d-md-block">
-                    <span class="badge badge-light">Primary</span>
-                </div>
-                <div class="icon-view">
-                    <a href="#" class="btn btn-success btn-sm">
-                        View or Edit
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="list-group list-group-flush list-group-align-items-center">
-            <div href="#" class="list-group-item list-group-item-action d-flex">
-                <div class="list-group-title">
-                    <div class="flex">
-                        <strong>64 Olde Bridge Lane</strong>
-                    </div>
-                    <small class="text-muted d-sm-none d-md-block">Epping, NH 03042</small>
-                </div>
-                <div class="icon-view">
-                    <a href="#" class="btn btn-success btn-sm">
-                        View or Edit
-                    </a>
-                </div>
-            </div>
-        </div>-->
     </div>
 </template>
 
