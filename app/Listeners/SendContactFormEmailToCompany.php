@@ -28,6 +28,8 @@ class SendContactFormEmailToCompany
      */
     public function handle(ContactFormSubmit $event)
     {
-        Mail::to('contact@mtnview.email')->send(new ContactFormSubmitEmail($event->data));
+        $cc = explode(',', env('ADMIN_EMAILS'));
+
+        Mail::to('contact@mtnview.email')->cc($cc)->send(new ContactFormSubmitEmail($event->data));
     }
 }
