@@ -4,7 +4,7 @@
 //
 
 // Variables
-$card-header-bg: #f7f8f9;
+$card-header-bg: $white;
 $headings-color: rgba($body-color, 0.9);
 $card-footer-bg: white;
 
@@ -17,8 +17,7 @@ $card-footer-bg: white;
     word-wrap: break-word;
     background-color: $card-bg;
     background-clip: border-box;
-    box-shadow: 0 10px 25px 0 rgba(50, 50, 93, 0.07),
-        0 5px 15px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 10px 25px 0 rgba(50, 50, 93, 0.07), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
     border: none;
     margin-bottom: $grid-gutter-width / 2;
     @include border-radius($card-border-radius);
@@ -113,9 +112,7 @@ $card-footer-bg: white;
     border-bottom: $card-border-width solid $card-border-color;
 
     &:first-child {
-        @include border-radius(
-            $card-inner-border-radius $card-inner-border-radius 0 0
-        );
+        @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
     }
 
     + .list-group {
@@ -133,6 +130,23 @@ $card-footer-bg: white;
         padding-top: 0.85rem;
         padding-bottom: 0.85rem;
     }
+
+    &-title {
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: $font-family-base;
+        letter-spacing: 0;
+        color: $headings-color;
+        margin: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .active & {
+            color: $primary;
+        }
+    }
 }
 
 .card-footer {
@@ -141,9 +155,7 @@ $card-footer-bg: white;
     border-top: $card-border-width solid $card-border-color;
 
     &:last-child {
-        @include border-radius(
-            0 0 $card-inner-border-radius $card-inner-border-radius
-        );
+        @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
     }
 }
 
@@ -241,8 +253,7 @@ $card-footer-bg: white;
         display: flex;
         flex-flow: row wrap;
         margin-bottom: $grid-gutter-width;
-        box-shadow: 0 10px 25px 0 rgba(50, 50, 93, 0.07),
-            0 5px 15px 0 rgba(0, 0, 0, 0.07);
+        box-shadow: 0 10px 25px 0 rgba(50, 50, 93, 0.07), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
         @include border-radius($card-border-radius);
 
         // The child selector allows nested `.card` within `.card-group`

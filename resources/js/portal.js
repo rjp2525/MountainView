@@ -19,10 +19,12 @@ window.Vue = require("vue");
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component(
-    "example-component",
-    require("./components/ExampleComponent.vue").default
-);
+Vue.component("example-component", require("./components/ExampleComponent.vue").default);
+Vue.component("modal", require("./components/Modal.vue").default);
+Vue.component("create-address-form", require("./components/forms/CreateNewAddressForm.vue").default);
+Vue.component("address-list-widget", require("./components/dashboard/AddressListWidget.vue").default);
+
+const PORTAL_API_PREFIX = "/portal/api/";
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,4 +34,7 @@ Vue.component(
 
 const app = new Vue({
     el: "#app",
+    data: {
+        showAddAddressFormModal: false,
+    },
 });
