@@ -80,7 +80,10 @@
                     <img class="d-block banner-background-image" src="img/homepage_banner_bg.png" alt="Banner background image">
                     <div class="carousel-caption banner-slider-inner d-flex h-100">
                         <div class="carousel-content container">
-                            <div class="banner-inner">
+                            <div class="alert alert-danger" role="alert" style="font-size: 13px;">
+                                <strong>COVID-19 UPDATE:</strong> Mountain View Landscaping is committed to keeping customers informed of any changes that may come in the days or weeks to follow. The safety and well-being of employees, customers, business partners and the communities in which we live and serve remains a top priority.
+                            </div>
+                            <div class="banner-inner" style="margin-top: 30px;">
                                 <h1 class="b-text">Your local top notch landscaper.</h1>
                                 <p>Mountain View Landscaping can be your partner for beautiful landscaping and year-round grounds management for your residential or commercial property.</p>
                                 <a href="#about" class="btn-md button-theme">Learn More</a>
